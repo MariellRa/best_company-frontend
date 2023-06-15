@@ -42,7 +42,6 @@ response = requests.get(url, params=dict_input)
 if response.status_code != 200:
     print('Error')
 
-st.divider() 
 '''
 **HOW THIS WORKS?**
 
