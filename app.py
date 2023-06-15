@@ -42,11 +42,11 @@ if response.status_code != 200:
     print('Error')
 
 '''
-How this works?
+HOW THIS WORKS?
 
 Once you've provided the necessary information, our advanced algorithm will analyze your data and generate a list of companies that align with  your preferences. You'll receive valuable insights about each company's  work-life balance, career growth opportunities, and collaborative  environment, enabling you to make an informed decision about your future workplace as a data scientist.
 
-## Please find the overview of your ideal company as a data scientist as follows:
+Please find the overview of your ideal company as a data scientist as follows:
 
 '''
 
