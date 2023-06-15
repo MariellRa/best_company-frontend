@@ -4,7 +4,6 @@ import requests
 import pandas as pd
 import numpy as np
 import math
-from streamlit_extras.let_it_rain import rain
 
 
 '''
@@ -49,14 +48,6 @@ if response.status_code != 200:
 Once you've provided the necessary information, our advanced algorithm will analyze your data and generate a list of companies that align with  your preferences. You'll receive valuable insights about each company's  work-life balance, career growth opportunities, and collaborative  environment, enabling you to make an informed decision about your future workplace as a data scientist.
 
 ## :trophy: RESULTS :trophy: 
-'''
-
-rain(
-    emoji="🎈",
-    font_size=54,
-    falling_speed=5,
-    animation_length="infinite",
-)
 
 '''
 ##### Please find the overview of your ideal company as a data scientist as follows:
