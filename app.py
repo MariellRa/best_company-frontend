@@ -35,10 +35,17 @@ dict_input = {'variable1': int(variable1), 'variable2': int(variable2),
               'variable4': int(variable4),
               'variable5': int(variable5)}
 
+
 response = requests.get(url, params=dict_input)
 
 if response.status_code != 200:
     print('Error')
 
+'''
+## HOW THIS WORKS?
+Once you've provided the necessary information, our advanced algorithm will analyze your data and generate a list of companies that align with  your preferences. You'll receive valuable insights about each company's  work-life balance, career growth opportunities, and collaborative  environment, enabling you to make an informed decision about your future workplace as a data scientist.
+'''
+
 st.write('Your ranking is:')
 st.write(response.json())
+
