@@ -51,7 +51,7 @@ Once you've provided the necessary information, our advanced algorithm will anal
 
 ##### Please find the overview of your ideal company as a data scientist as follows:
 '''
-st.write('First of all, your ideal company is:')
+st.write('1) First of all, your ideal company is:')
 st.write(response.json())
 
 '''
@@ -60,6 +60,9 @@ Work-Life Balance: 8/10
 Career Growth Opportunities: 6/10
 Collaborative Environment: 4/10
 
-Meta is known for its exceptional work-life balance, offering you the flexibility and support you need to maintain a healthy work-life integration. You'll have the freedom to pursue personal interests while excelling in your professional responsibilities.
+2) Meta is known for its exceptional work-life balance, offering you the flexibility and support you need to maintain a healthy work-life integration. You'll have the freedom to pursue personal interests while excelling in your professional responsibilities.
+
+3) Wordcloud per company and/or per topic. 
 '''
+
 
