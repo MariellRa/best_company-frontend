@@ -7,7 +7,7 @@ import math
 
 
 '''
-# Welcome to app Find DS Company :blue[colors]!
+# Welcome to app :blue[Find DS Company]!
 
 Welcome to our app, where we assist you in finding your ideal company as a data scientist. 
 
