@@ -51,6 +51,6 @@ Once you've provided the necessary information, our advanced algorithm will anal
 
 Please find the overview of your ideal company as a data scientist as follows:
 '''
-st.write('Your ranking is:')
+st.write('Your ideal company is:')
 st.write(response.json())
 
