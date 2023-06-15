@@ -67,12 +67,4 @@ Collaborative Environment: 4/10
 4) Rating with chart.
 '''
 
-rating_df = pd.DataFrame()companies = df[‘company’].unique()
-ratings = list(range(1, 6))for company in companies:
-    temp = df[df[‘company’] == company]
-    rating_counts = round(temp[‘rating’].value_counts(normalize=True).reindex(ratings, fill_value=0),3)
-    rating_df[company] = rating_counts.valuesrating_df[‘Total’] = round(rating_df.mean(axis=1),3)rating_df.index = ratings
-rating_df.index.name = ‘rating’
-rating_df.columns.name = ‘company’print(rating_df)
-
 
