@@ -49,7 +49,6 @@ Once you've provided the necessary information, our advanced algorithm will anal
 
 ## :trophy: RESULTS :trophy: 
 
-'''
 ##### Please find the overview of your ideal company as a data scientist as follows:
 '''
 st.write('First of all, your ideal company is:')
