@@ -5,8 +5,9 @@ import pandas as pd
 import numpy as np
 import math
 
+
 '''
-# Welcome to app Find DS Company!
+# Welcome to app Find DS Company :blue[colors]!
 
 Welcome to our app, where we assist you in finding your ideal company as a data scientist. 
 
