@@ -62,7 +62,7 @@ Collaborative Environment: 4/10
 
 2) Meta is known for its exceptional work-life balance, offering you the flexibility and support you need to maintain a healthy work-life integration. You'll have the freedom to pursue personal interests while excelling in your professional responsibilities.
 
-3) Wordcloud per company and/or per topic. 
+3) Wordcloud per company. 
 
 4) Rating with chart.
 
