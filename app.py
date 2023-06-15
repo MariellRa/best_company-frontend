@@ -51,6 +51,16 @@ Once you've provided the necessary information, our advanced algorithm will anal
 
 ##### Please find the overview of your ideal company as a data scientist as follows:
 '''
-st.write('Your ideal company is:')
+st.write('First of all, your ideal company is:')
 st.write(response.json())
+
+'''
+The input you provided us:
+Work-Life Balance: 8/10
+Career Growth Opportunities: 6/10
+Collaborative Environment: 4/10
+
+'''
+[COMPANY NAME] is known for its exceptional work-life balance, offering you the flexibility and support you need to maintain a healthy work-life integration. You'll have the freedom to pursue personal interests while excelling in your professional responsibilities.
+'''
 
