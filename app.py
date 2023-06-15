@@ -65,6 +65,8 @@ Collaborative Environment: 4/10
 3) Wordcloud per company and/or per topic. 
 
 4) Rating with chart.
+
+5) 3 most highly-valued cons/pros per company.
 '''
 
 
