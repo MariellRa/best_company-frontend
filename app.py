@@ -49,9 +49,7 @@ Once you've provided the necessary information, our advanced algorithm will anal
 '''
 st.divider() 
 '''
-:trophy:
-
-Please find the overview of your ideal company as a data scientist as follows:
+:trophy: :trophy: :trophy: Please find the overview of your ideal company as a data scientist as follows :trophy: :trophy: :trophy:: 
 '''
 st.write('Your ranking is:')
 st.write(response.json())
