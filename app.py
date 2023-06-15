@@ -14,6 +14,11 @@ Welcome to our app, where we assist you in finding your ideal company as a data 
 To begin the process, we kindly ask you to input three keywords that reflect your preferences and assign each a value from 1 to 10. These keywords will help our algorithm identify the best matching companies for you based on your specified criteria.
 
 The higher the value, the more important the keyword is to you.
+
+**HOW THIS WORKS?**
+
+Once you've provided the necessary information, our advanced algorithm will analyze your data and generate a list of companies that align with  your preferences. You'll receive valuable insights about each company's  work-life balance, career growth opportunities, and collaborative  environment, enabling you to make an informed decision about your future workplace as a data scientist.
+
 '''
 # Variable 1 Slider
 variable1 = st.slider('Select Rating of Criteria 1:', 1, 10, 1)
@@ -42,11 +47,6 @@ response = requests.get(url, params=dict_input)
 if response.status_code != 200:
     print('Error')
 
-'''
-**HOW THIS WORKS?**
-
-Once you've provided the necessary information, our advanced algorithm will analyze your data and generate a list of companies that align with  your preferences. You'll receive valuable insights about each company's  work-life balance, career growth opportunities, and collaborative  environment, enabling you to make an informed decision about your future workplace as a data scientist.
-'''
 st.divider() 
 '''
 :trophy: :trophy: :trophy: Please find the overview of your ideal company as a data scientist as follows :trophy: :trophy: :trophy:: 
