@@ -61,6 +61,6 @@ Career Growth Opportunities: 6/10
 Collaborative Environment: 4/10
 
 '''
-[COMPANY NAME] is known for its exceptional work-life balance, offering you the flexibility and support you need to maintain a healthy work-life integration. You'll have the freedom to pursue personal interests while excelling in your professional responsibilities.
+COMPANY NAME is known for its exceptional work-life balance, offering you the flexibility and support you need to maintain a healthy work-life integration. You'll have the freedom to pursue personal interests while excelling in your professional responsibilities.
 '''
 
