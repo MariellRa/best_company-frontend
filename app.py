@@ -6,7 +6,11 @@ import numpy as np
 import math
 
 '''
-# Best Company
+# Welcome to app Find DS Company!
+
+Welcome to our app, where we assist you in finding your ideal company as a data scientist. To begin the process, we kindly ask you to input three keywords that reflect your preferences and assign each a value from 1 to 10. These keywords will help our algorithm identify the best matching companies for you based on your specified criteria.
+
+The higher the value, the more important the keyword is to you.
 '''
 # Variable 1 Slider
 variable1 = st.slider('Select Rating of Criteria 1:', 1, 10, 1)
