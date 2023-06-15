@@ -4,6 +4,7 @@ import requests
 import pandas as pd
 import numpy as np
 import math
+from streamlit_extras.let_it_rain import rain
 
 
 '''
@@ -49,8 +50,6 @@ Once you've provided the necessary information, our advanced algorithm will anal
 
 ## :trophy: RESULTS :trophy: 
 '''
-
-from streamlit_extras.let_it_rain import rain
 
 rain(
     emoji="🎈",
