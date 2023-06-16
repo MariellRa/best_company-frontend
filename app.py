@@ -78,10 +78,10 @@ Once you've provided the necessary information, our advanced algorithm will anal
 ##### Please find the overview of your ideal company as a data scientist as follows:
 '''
 st.write('1) Your ideal company is:')
-st.write(list(response.json()['Sorted_Company'])[-1])
+st.write(list(response.json()['sorted_company'])[-1])
 
 # Company Dashboard
-company = list(response.json()['Sorted_Company'])[-1]
+company = list(response.json()['sorted_company'])[-1]
 
 company_name = f'{company}'
 
