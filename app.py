@@ -172,7 +172,7 @@ if company == 'Apple':
     wordcloud_apple = WordCloud(width=800, height=400, background_color='white', contour_width=3, contour_color='steelblue', random_state=42).generate(apple_cloud_data)
     
     fig, ax = plt.subplots()
-    ax.imshow(wordcloud, interpolation='bilinear')
+    ax.imshow(wordcloud_apple, interpolation='bilinear')
     ax.axis("off")
     fig.set_edgecolor('round')
     fig.set_facecolor('white')
