@@ -389,7 +389,7 @@ if company == 'Google':
 
     wordcloud_google = WordCloud().generate(google)
 
-    plt.imshow(wordcloud, interpolation='bilinear')
+    plt.imshow(wordcloud_amazon, interpolation='bilinear')
     plt.axis("off")
     plt.show()
     st.pyplot(plt)
