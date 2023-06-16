@@ -22,11 +22,11 @@ keyword10 = 'Role scope'
 
 Welcome to our app, where we assist you in finding your ideal company as a data scientist. 
 
-To begin the process, we kindly ask you to rate ten keywords to reflect your preferences. 
+To begin the process, we kindly ask you to rate ten keywords to reflect your preferences. These keywords will help our algorithm identify the best matching companies for you based on your specified criteria.
 
-These keywords will help our algorithm identify the best matching companies for you based on your specified criteria.
+Please assign each a value from 1 to 10. 
 
-Please assign each a value from 1 to 10. The higher the value, the more important the keyword is to you.
+The higher the value, the more important the keyword is to you.
 
 '''
 col1, col2 = st.columns(2)
