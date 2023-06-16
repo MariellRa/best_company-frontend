@@ -99,7 +99,9 @@ total = [0.030, 0.029, 0.111, 0.302, 0.528]
 
 
 variable_dict = {keyword1: variable1, keyword2: variable2, keyword3: variable3,
-                 keyword4: variable4, keyword5: variable5}
+                 keyword4: variable4, keyword5: variable5, keyword6: variable6, 
+                 keyword7: variable7, keyword8: variable8, keyword9: variable9,
+                 keyword10: variable10}
 
 sorted_variable_dict = sorted(variable_dict.items(), key=lambda x:x[1])
 
