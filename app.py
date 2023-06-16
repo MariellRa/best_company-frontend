@@ -4,6 +4,7 @@ import requests
 import pandas as pd
 import numpy as np
 import math
+import matplotlib.pyplot as plt
 
 
 '''
@@ -61,7 +62,38 @@ Career Growth Opportunities: 6/10
 Collaborative Environment: 4/10
 
 2) Meta is known for its exceptional work-life balance, offering you the flexibility and support you need to maintain a healthy work-life integration. You'll have the freedom to pursue personal interests while excelling in your professional responsibilities.
+'''
 
+companies = ['meta', 'apple', 'google', 'amazon', 'microsoft']
+
+ratings = {
+    'meta': [0.027, 0.050, 0.164, 0.301, 0.457],
+    'apple': [0.039, 0.020, 0.122, 0.291, 0.528],
+    'google': [0.005, 0.014, 0.043, 0.271, 0.667],
+    'amazon': [0.063, 0.048, 0.104, 0.348, 0.437],
+    'microsoft': [0.016, 0.013, 0.120, 0.301, 0.550],
+}
+
+ratings['total'] = [sum(ratings[company]) for company in companies]
+
+plt.figure(figsize=(8, 6))
+plt.bar(companies, ratings['total'])
+plt.xlabel('Companies')
+plt.ylabel('Total Ratings')
+plt.title('Total Ratings for Companies')
+plt.show()
+
+
+plt.figure(figsize=(8, 6))
+for company in companies:
+    plt.plot(ratings[company], marker='o', label=company)
+plt.xlabel('Years')
+plt.ylabel('Ratings')
+plt.title('Ratings Over Time')
+plt.legend()
+plt.show()
+
+'''
 3) Wordcloud per company. 
 
 4) Rating with chart.
