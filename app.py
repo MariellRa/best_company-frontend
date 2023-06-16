@@ -34,25 +34,25 @@ with col1:
 # Variable 1 Slider
   variable1 = st.slider(f'{keyword1}', 1, 10, 1)
 # Variable 2 Slider
-  variable2 = st.slider(f'{keyword2}:', 1, 10, 1)
+  variable2 = st.slider(f'{keyword2}', 1, 10, 1)
 # Variable 3 Slider
-  variable3 = st.slider(f'{keyword3}:', 1, 10, 1)
+  variable3 = st.slider(f'{keyword3}', 1, 10, 1)
 # Variable 4 Slider
-  variable4 = st.slider(f'{keyword4}:', 1, 10, 1)
+  variable4 = st.slider(f'{keyword4}', 1, 10, 1)
 # Variable 5 Slider
-  variable5 = st.slider(f'{keyword5}:', 1, 10, 1)
+  variable5 = st.slider(f'{keyword5}', 1, 10, 1)
 
 with col2:
 # Variable 6 Slider
-  variable6 = st.slider(f'Rate: {keyword6}:', 1, 10, 1)
+  variable6 = st.slider(f'{keyword6}', 1, 10, 1)
 # Variable 7 Slider
-  variable7 = st.slider(f'Rate: {keyword7}:', 1, 10, 1)
+  variable7 = st.slider(f'{keyword7}', 1, 10, 1)
 # Variable 8 Slider
-  variable8 = st.slider(f'Rate: {keyword8}:', 1, 10, 1)
+  variable8 = st.slider(f'{keyword8}', 1, 10, 1)
 # Variable 9 Slider
-  variable9 = st.slider(f'Rate: {keyword9}:', 1, 10, 1)
+  variable9 = st.slider(f'{keyword9}', 1, 10, 1)
 # Variable 10 Slider
-  variable10 = st.slider(f'Rate: {keyword10}:', 1, 10, 1)
+  variable10 = st.slider(f'{keyword10}', 1, 10, 1)
 
 # Google Cloud Run URL
 #url = 'https://bestcompany-nrfshmhfmq-ew.a.run.app/predict'
