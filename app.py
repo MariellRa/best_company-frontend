@@ -108,7 +108,7 @@ sorted_variable_dict = sorted(variable_dict.items(), key=lambda x:x[1])
 work_life_intro = f'{company_name} is know for good {keyword1}'
 
 if company == 'Apple':
-    'Here is some info about Apple'
+    st.write('Apple Inc. is an American multinational technology company headquartered in Cupertino, California. Apple is the world's largest technology company by revenue, the world's biggest company by market capitalization, and the fourth-largest personal computer vendor by unit sales and the second-largest mobile phone manufacturer in the world.'
 
 if company == 'Meta':
     st.write('Meta Platforms, Inc., formerly named Facebook, Inc., and TheFacebook, Inc., is an American multinational technology conglomerate based in Menlo Park, California. The company owns Facebook, Instagram, and WhatsApp, among other products and services.')
