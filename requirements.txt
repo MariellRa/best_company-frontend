@@ -2,4 +2,4 @@ wordcloud
 pandas
 numpy
 matplotlib
-PIL
+pillow
