@@ -22,7 +22,7 @@ keyword10 = 'Role scope'
 
 Welcome to our app, where we assist you in finding your ideal company as a data scientist. 
 
-To begin the process, we kindly ask you to input three keywords that reflect your preferences and assign each a value from 1 to 10. These keywords will help our algorithm identify the best matching companies for you based on your specified criteria.
+To begin the process, we kindly ask you to input ten keywords that reflect your preferences and assign each a value from 1 to 10. These keywords will help our algorithm identify the best matching companies for you based on your specified criteria.
 
 The higher the value, the more important the keyword is to you.
 
@@ -32,15 +32,15 @@ col1, col2 = st.columns(2)
 with col1:
   
 # Variable 1 Slider
-  variable1 = st.slider(f'Rate: {keyword1}', 1, 10, 1)
+  variable1 = st.slider(f'{keyword1}', 1, 10, 1)
 # Variable 2 Slider
-  variable2 = st.slider(f'Rate: {keyword2}:', 1, 10, 1)
+  variable2 = st.slider(f'{keyword2}:', 1, 10, 1)
 # Variable 3 Slider
-  variable3 = st.slider(f'Rate: {keyword3}:', 1, 10, 1)
+  variable3 = st.slider(f'{keyword3}:', 1, 10, 1)
 # Variable 4 Slider
-  variable4 = st.slider(f'Rate: {keyword4}:', 1, 10, 1)
+  variable4 = st.slider(f'{keyword4}:', 1, 10, 1)
 # Variable 5 Slider
-  variable5 = st.slider(f'Rate: {keyword5}:', 1, 10, 1)
+  variable5 = st.slider(f'{keyword5}:', 1, 10, 1)
 
 with col2:
 # Variable 6 Slider
