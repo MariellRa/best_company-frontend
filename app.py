@@ -62,8 +62,7 @@ dict_input = {'variable1': int(variable1),
               'variable7': int(variable7),
               'variable8': int(variable8),
               'variable9': int(variable9),
-              'variable10': int(variable10),
-}
+              'variable10': int(variable10)}
 
 response = requests.get(url, params=dict_input)
 
