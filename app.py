@@ -4,7 +4,6 @@ import requests
 import pandas as pd
 import numpy as np
 import math
-from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 from PIL import Image
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
