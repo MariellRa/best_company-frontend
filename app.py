@@ -32,9 +32,8 @@ Please assign each a value from 0 to 10.
 The higher the value, the more important the keyword is to you.
 
 '''
-col1, col2 = st.columns(2)
+add_selectbox = st.sidebar.selectbox(
 
-with col1:
   
 # Variable 1 Slider
   variable1 = st.slider(f'{keyword1}', 0, 10, 0)
@@ -47,7 +46,7 @@ with col1:
 # Variable 5 Slider
   variable5 = st.slider(f'{keyword5}', 0, 10, 0)
 
-with col2:
+
 # Variable 6 Slider
   variable6 = st.slider(f'{keyword6}', 0, 10, 0)
 # Variable 7 Slider
@@ -58,6 +57,8 @@ with col2:
   variable9 = st.slider(f'{keyword9}', 0, 10, 0)
 # Variable 10 Slider
   variable10 = st.slider(f'{keyword10}', 0, 10, 0)
+
+)
 
 # Google Cloud Run URL
 #url = 'https://bestcompany-nrfshmhfmq-ew.a.run.app/predict'
