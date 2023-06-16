@@ -108,7 +108,7 @@ sorted_variable_dict = sorted(variable_dict.items(), key=lambda x:x[1])
 work_life_intro = f'{company_name} is know for good {keyword1}'
 
 if company == 'Apple':
-    st.write('Apple Inc. is an American multinational technology company headquartered in Cupertino, California. Apple is the world's largest technology company by revenue, the world's biggest company by market capitalization, and the fourth-largest personal computer vendor by unit sales and the second-largest mobile phone manufacturer in the world.')
+    st.write('Apple Inc. is an American multinational technology company headquartered in Cupertino, California. Apple is the world largest technology company by revenue, the world's biggest company by market capitalization, and the fourth-largest personal computer vendor by unit sales and the second-largest mobile phone manufacturer in the world.')
     for i in range(2):
         if list(variable_dict)[i] == keyword1:
             X = f'{company_name} is best know for having a great work-life balance...'
