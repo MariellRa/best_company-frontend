@@ -27,11 +27,11 @@ Welcome to our app, where we assist you in finding your ideal company as a data 
 
 '''
 st.sidebar.markdown("**Rate the Importance of 10 Keywords**"
-st.sidebar.write("To begin the process, we kindly ask you to rate ten keywords to reflect your preferences.") 
-st.sidebar.write("These keywords will help our algorithm identify the best matching companies for you based on your specified criteria.") 
+st.sidebar.markdown("To begin the process, we kindly ask you to rate ten keywords to reflect your preferences.") 
+st.sidebar.markdown("These keywords will help our algorithm identify the best matching companies for you based on your specified criteria.") 
 
 st.sidebar.write("Please assign each a value from 0 to 10. The higher the value, the more important the keyword is to you.")
-  
+
 # Variable 1 Slider
 variable1 = st.sidebar.slider(f'{keyword1}', 0, 10, 0)
 # Variable 2 Slider
@@ -42,8 +42,6 @@ variable3 = st.sidebar.slider(f'{keyword3}', 0, 10, 0)
 variable4 = st.sidebar.slider(f'{keyword4}', 0, 10, 0)
 # Variable 5 Slider
 variable5 = st.sidebar.slider(f'{keyword5}', 0, 10, 0)
-
-
 # Variable 6 Slider
 variable6 = st.sidebar.slider(f'{keyword6}', 0, 10, 0)
 # Variable 7 Slider
