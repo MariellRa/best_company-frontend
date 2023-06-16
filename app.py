@@ -32,33 +32,29 @@ Please assign each a value from 0 to 10.
 The higher the value, the more important the keyword is to you.
 
 '''
-add_selectbox = st.sidebar.selectbox(
-
   
 # Variable 1 Slider
-  variable1 = st.slider(f'{keyword1}', 0, 10, 0)
+  variable1 = st.sidebar.slider(f'{keyword1}', 0, 10, 0)
 # Variable 2 Slider
-  variable2 = st.slider(f'{keyword2}', 0, 10, 0)
+  variable2 = st.sidebar.slider(f'{keyword2}', 0, 10, 0)
 # Variable 3 Slider
-  variable3 = st.slider(f'{keyword3}', 0, 10, 0)
+  variable3 = st.sidebar.slider(f'{keyword3}', 0, 10, 0)
 # Variable 4 Slider
-  variable4 = st.slider(f'{keyword4}', 0, 10, 0)
+  variable4 = st.sidebar.slider(f'{keyword4}', 0, 10, 0)
 # Variable 5 Slider
-  variable5 = st.slider(f'{keyword5}', 0, 10, 0)
+  variable5 = st.sidebar.slider(f'{keyword5}', 0, 10, 0)
 
 
 # Variable 6 Slider
-  variable6 = st.slider(f'{keyword6}', 0, 10, 0)
+  variable6 = st.sidebar.slider(f'{keyword6}', 0, 10, 0)
 # Variable 7 Slider
-  variable7 = st.slider(f'{keyword7}', 0, 10, 0)
+  variable7 = st.sidebar.slider(f'{keyword7}', 0, 10, 0)
 # Variable 8 Slider
-  variable8 = st.slider(f'{keyword8}', 0, 10, 0)
+  variable8 = st.sidebar.slider(f'{keyword8}', 0, 10, 0)
 # Variable 9 Slider
-  variable9 = st.slider(f'{keyword9}', 0, 10, 0)
+  variable9 = st.sidebar.slider(f'{keyword9}', 0, 10, 0)
 # Variable 10 Slider
-  variable10 = st.slider(f'{keyword10}', 0, 10, 0)
-
-)
+  variable10 = st.sidebar.slider(f'{keyword10}', 0, 10, 0)
 
 # Google Cloud Run URL
 #url = 'https://bestcompany-nrfshmhfmq-ew.a.run.app/predict'
