@@ -26,7 +26,7 @@ To begin the process, we kindly ask you to rate ten keywords to reflect your pre
 
 Please assign each a value from 1 to 10. 
 
-The higher the value, the more important the keyword is to you:
+The higher the value, the more important the keyword is to you.
 
 '''
 col1, col2 = st.columns(2)
@@ -119,6 +119,14 @@ work_life_intro = f'{company_name} is know for good {keyword1}'
 
 if company == 'Apple':
     st.write('Apple Inc. is an American multinational technology company headquartered in Cupertino, California. Apple is the world largest technology company by revenue, and the second-largest mobile phone manufacturer in the world.')
+    
+    apple = 'place work, smart people, environment people, work life, company work, big company, work smart, lot perk, well manage, pay phone, team work, work environment, life balance, people work, company culture, work apple, salary benefit, work culture, worklife balance, get work, work lot, excite work, really enjoy, culture people, fast pace, benefit pay, environment work, interest project, talented people, perk benefit, growth opportunities, lot opportunities, experience work, learn lot, opportunities grow, nice place, work people, depend team, interest work, want work, work benefit, work big, nice work, love work, work products, products impact, impact world, health insurance'
+    wordcloud_apple = WordCloud().generate(apple)
+    plt.imshow(wordcloud_apple, interpolation='bilinear')
+    plt.axis("off")
+    plt.show()
+    st.pyplot(plt)
+  
     for i in range(2):
         if list(variable_dict)[i] == keyword1:
             X = f'{company_name} is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
