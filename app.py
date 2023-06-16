@@ -119,13 +119,6 @@ work_life_intro = f'{company_name} is know for good {keyword1}'
 
 if company == 'Apple':
     st.write('Apple Inc. is an American multinational technology company headquartered in Cupertino, California. Apple is the world largest technology company by revenue, and the second-largest mobile phone manufacturer in the world.')
-    
-    apple = 'place work, smart people, environment people, work life, company work, big company, work smart, lot perk, well manage, pay phone, team work, work environment, life balance, people work, company culture, work apple, salary benefit, work culture, worklife balance, get work, work lot, excite work, really enjoy, culture people, fast pace, benefit pay, environment work, interest project, talented people, perk benefit, growth opportunities, lot opportunities, experience work, learn lot, opportunities grow, nice place, work people, depend team, interest work, want work, work benefit, work big, nice work, love work, work products, products impact, impact world, health insurance'
-    wordcloud_apple = WordCloud().generate(apple)
-    plt.imshow(wordcloud_apple, interpolation='bilinear')
-    plt.axis("off")
-    plt.show()
-    st.pyplot(plt)
   
     for i in range(2):
         if list(variable_dict)[i] == keyword1:
@@ -170,6 +163,13 @@ if company == 'Apple':
         if list(variable_dict)[i] == keyword10:
             Y = f'In addition to this...{company_name} is best know for having a great management...'
     st.write(X + Y)
+
+    apple = 'place work, smart people, environment people, work life, company work, big company, work smart, lot perk, well manage, pay phone, team work, work environment, life balance, people work, company culture, work apple, salary benefit, work culture, worklife balance, get work, work lot, excite work, really enjoy, culture people, fast pace, benefit pay, environment work, interest project, talented people, perk benefit, growth opportunities, lot opportunities, experience work, learn lot, opportunities grow, nice place, work people, depend team, interest work, want work, work benefit, work big, nice work, love work, work products, products impact, impact world, health insurance'
+    wordcloud_apple = WordCloud().generate(apple)
+    plt.imshow(wordcloud_apple, interpolation='bilinear')
+    plt.axis("off")
+    plt.show()
+    st.pyplot(plt)
     
 if company == 'Meta':
     st.write('Meta Platforms, Inc., formerly named Facebook, Inc., and TheFacebook, Inc., is an American multinational technology conglomerate based in Menlo Park, California. The company owns Facebook, Instagram, and WhatsApp, among other products and services.')
