@@ -22,7 +22,9 @@ keyword10 = 'Role scope'
 
 Welcome to our app, where we assist you in finding your ideal company as a data scientist. 
 
-To begin the process, we kindly ask you to input ten keywords that reflect your preferences and assign each a value from 1 to 10. These keywords will help our algorithm identify the best matching companies for you based on your specified criteria.
+To begin the process, we kindly ask you to input ten keywords that reflect your preferences and assign each a value from 1 to 10. 
+
+These keywords will help our algorithm identify the best matching companies for you based on your specified criteria.
 
 The higher the value, the more important the keyword is to you.
 
