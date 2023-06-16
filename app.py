@@ -26,7 +26,8 @@ keyword10 = 'Role scope'
 Welcome to our app, where we assist you in finding your ideal company as a data scientist. 
 
 '''
-st.sidebar.write("Rate the Importance of 10 Keywords")
+st.sidebar.markdown("**Rate the Importance of 10 Keywords**")
+
 st.sidebar.write("To begin the process, we kindly ask you to rate ten keywords to reflect your preferences.") 
 st.sidebar.write("These keywords will help our algorithm identify the best matching companies for you based on your specified criteria.") 
 
