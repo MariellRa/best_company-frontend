@@ -111,7 +111,7 @@ if company == 'Apple':
     st.write('Apple Inc. is an American multinational technology company headquartered in Cupertino, California. Apple is the world largest technology company by revenue, and the second-largest mobile phone manufacturer in the world.')
     for i in range(2):
         if list(variable_dict)[i] == keyword1:
-            X = f'{company_name} is best know for having a great work-life balance...'
+            X = f'{company_name}  is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
         if list(variable_dict)[i] == keyword2:
             X = f'{company_name} is best know for having a great salary...'
         if list(variable_dict)[i] == keyword3:
@@ -120,9 +120,19 @@ if company == 'Apple':
             X = f'{company_name} is best know for having a great company size...'
         if list(variable_dict)[i] == keyword5:
             X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword6:
+            X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword7:
+            X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword8:
+            X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword9:
+            X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword10:
+            X = f'{company_name} is best know for having a great management...'
     for i in range(2):
         if list(variable_dict)[i] == keyword1:
-            Y = f'In addition to this...{company_name} is best know for having a great work-life balance...'
+            Y = f'In addition to this {company_name}  is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
         if list(variable_dict)[i] == keyword2:
             Y = f'In addition to this...{company_name} is best know for having a great salary...'
         if list(variable_dict)[i] == keyword3:
@@ -130,6 +140,16 @@ if company == 'Apple':
         if list(variable_dict)[i] == keyword4:
             Y = f'In addition to this...{company_name} is best know for having a great company size...'
         if list(variable_dict)[i] == keyword5:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword6:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword7:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword8:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword9:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword10:
             Y = f'In addition to this...{company_name} is best know for having a great management...'
     st.write(X + Y)
     
@@ -137,7 +157,7 @@ if company == 'Meta':
     st.write('Meta Platforms, Inc., formerly named Facebook, Inc., and TheFacebook, Inc., is an American multinational technology conglomerate based in Menlo Park, California. The company owns Facebook, Instagram, and WhatsApp, among other products and services.')
     for i in range(2):
         if list(variable_dict)[i] == keyword1:
-            X = f'{company_name} is best know for having a great work-life balance...'
+            X = f'{company_name}  is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
         if list(variable_dict)[i] == keyword2:
             X = f'{company_name} is best know for having a great salary...'
         if list(variable_dict)[i] == keyword3:
@@ -146,9 +166,20 @@ if company == 'Meta':
             X = f'{company_name} is best know for having a great company size...'
         if list(variable_dict)[i] == keyword5:
             X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword6:
+            X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword7:
+            X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword8:
+            X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword9:
+            X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword10:
+            X = f'{company_name} is best know for having a great management...'
+          
     for i in range(2):
         if list(variable_dict)[i] == keyword1:
-            Y = f'In addition to this...{company_name} is best know for having a great work-life balance...'
+            Y = f'In addition to this {company_name}  is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
         if list(variable_dict)[i] == keyword2:
             Y = f'In addition to this...{company_name} is best know for having a great salary...'
         if list(variable_dict)[i] == keyword3:
@@ -156,6 +187,16 @@ if company == 'Meta':
         if list(variable_dict)[i] == keyword4:
             Y = f'In addition to this...{company_name} is best know for having a great company size...'
         if list(variable_dict)[i] == keyword5:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword6:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword7:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword8:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword9:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword10:
             Y = f'In addition to this...{company_name} is best know for having a great management...'
     st.write(X + Y)
 
@@ -163,7 +204,7 @@ if company == 'Microsoft':
     st.write('Microsoft Corporation is an American multinational technology corporation headquartered in Redmond, Washington. Microsofts best-known software products are the Windows line of operating systems, the Microsoft Office suite, and the Internet Explorer and Edge web browsers.')
     for i in range(2):
         if list(variable_dict)[i] == keyword1:
-            X = f'{company_name} is best know for having a great work-life balance...'
+            X = f'{company_name} is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
         if list(variable_dict)[i] == keyword2:
             X = f'{company_name} is best know for having a great salary...'
         if list(variable_dict)[i] == keyword3:
@@ -172,9 +213,19 @@ if company == 'Microsoft':
             X = f'{company_name} is best know for having a great company size...'
         if list(variable_dict)[i] == keyword5:
             X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword6:
+            X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword7:
+            X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword8:
+            X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword9:
+            X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword10:
+            X = f'{company_name} is best know for having a great management...'
     for i in range(2):
         if list(variable_dict)[i] == keyword1:
-            Y = f'In addition to this...{company_name} is best know for having a great work-life balance...'
+            Y = f'In addition to this {company_name} is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
         if list(variable_dict)[i] == keyword2:
             Y = f'In addition to this...{company_name} is best know for having a great salary...'
         if list(variable_dict)[i] == keyword3:
@@ -182,6 +233,16 @@ if company == 'Microsoft':
         if list(variable_dict)[i] == keyword4:
             Y = f'In addition to this...{company_name} is best know for having a great company size...'
         if list(variable_dict)[i] == keyword5:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword6:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword7:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword8:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword9:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword10:
             Y = f'In addition to this...{company_name} is best know for having a great management...'
     st.write(X + Y)
 
@@ -189,7 +250,7 @@ if company == 'Amazon':
     st.write('Amazon.com, Inc. is an American multinational technology company focusing on e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence.')
     for i in range(2):
         if list(variable_dict)[i] == keyword1:
-            X = f'{company_name} is best know for having a great work-life balance...'
+            X = f'{company_name}  is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
         if list(variable_dict)[i] == keyword2:
             X = f'{company_name} is best know for having a great salary...'
         if list(variable_dict)[i] == keyword3:
@@ -198,9 +259,19 @@ if company == 'Amazon':
             X = f'{company_name} is best know for having a great company size...'
         if list(variable_dict)[i] == keyword5:
             X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword6:
+            X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword7:
+            X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword8:
+            X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword9:
+            X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword10:
+            X = f'{company_name} is best know for having a great management...'
     for i in range(2):
         if list(variable_dict)[i] == keyword1:
-            Y = f'In addition to this...{company_name} is best know for having a great work-life balance...'
+            Y = f'In addition to this {company_name} is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
         if list(variable_dict)[i] == keyword2:
             Y = f'In addition to this...{company_name} is best know for having a great salary...'
         if list(variable_dict)[i] == keyword3:
@@ -209,13 +280,23 @@ if company == 'Amazon':
             Y = f'In addition to this...{company_name} is best know for having a great company size...'
         if list(variable_dict)[i] == keyword5:
             Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword6:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword7:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword8:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword9:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword10:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
     st.write(X + Y)
 
 if company == 'Google':
     st.write('Google LLC is an American multinational technology company focusing on artificial intelligence, online advertising, search engine technology, cloud computing, computer software, quantum computing, e-commerce, and consumer electronics.')
     for i in range(2):
         if list(variable_dict)[i] == keyword1:
-            X = f'{company_name} is best know for having a great work-life balance...'
+            X = f'{company_name} is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
         if list(variable_dict)[i] == keyword2:
             X = f'{company_name} is best know for having a great salary...'
         if list(variable_dict)[i] == keyword3:
@@ -224,9 +305,19 @@ if company == 'Google':
             X = f'{company_name} is best know for having a great company size...'
         if list(variable_dict)[i] == keyword5:
             X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword6:
+            X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword7:
+            X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword8:
+            X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword9:
+            X = f'{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword10:
+            X = f'{company_name} is best know for having a great management...'
     for i in range(2):
         if list(variable_dict)[i] == keyword1:
-            Y = f'In addition to this...{company_name} is best know for having a great work-life balance...'
+            Y = f'In addition to this {company_name} is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
         if list(variable_dict)[i] == keyword2:
             Y = f'In addition to this...{company_name} is best know for having a great salary...'
         if list(variable_dict)[i] == keyword3:
@@ -234,6 +325,16 @@ if company == 'Google':
         if list(variable_dict)[i] == keyword4:
             Y = f'In addition to this...{company_name} is best know for having a great company size...'
         if list(variable_dict)[i] == keyword5:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword6:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword7:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword8:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword9:
+            Y = f'In addition to this...{company_name} is best know for having a great management...'
+        if list(variable_dict)[i] == keyword10:
             Y = f'In addition to this...{company_name} is best know for having a great management...'
     st.write(X + Y)
 
