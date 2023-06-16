@@ -174,7 +174,6 @@ if company == 'Apple':
     fig, ax = plt.subplots()
     ax.imshow(wordcloud_apple, interpolation='bilinear')
     ax.axis("off")
-    fig.set_edgecolor('round')
     fig.set_facecolor('white')
     fig.patch.set_alpha(0.7)
     
