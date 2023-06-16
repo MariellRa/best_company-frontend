@@ -5,11 +5,16 @@ import pandas as pd
 import numpy as np
 import math
 
-keyword1 = 'Work-Life Balance'
-keyword2 = 'Salary'
-keyword3 = 'Benefits'
-keyword4 = 'Company Size'
-keyword5 = 'Good Management'
+keyword1 = 'Career Growth'
+keyword2 = 'Work Environment'
+keyword3 = 'Work-Life Balance'
+keyword4 = 'Diversity & Inclusion'
+keyword5 = 'Technology'
+keyword6 = 'Compensation'
+keyword7 = 'People-Centric Culture'
+keyword8 = 'Team work'
+keyword9 = 'Learning & Development'
+keyword10 = 'Role scope'
 
 
 '''
@@ -32,16 +37,33 @@ variable3 = st.slider(f'Select Rating of {keyword3}:', 1, 10, 1)
 variable4 = st.slider(f'Select Rating of {keyword4}:', 1, 10, 1)
 # Variable 5 Slider
 variable5 = st.slider(f'Select Rating of {keyword5}:', 1, 10, 1)
+# Variable 6 Slider
+variable5 = st.slider(f'Select Rating of {keyword6}:', 1, 10, 1)
+# Variable 7 Slider
+variable5 = st.slider(f'Select Rating of {keyword7}:', 1, 10, 1)
+# Variable 8 Slider
+variable5 = st.slider(f'Select Rating of {keyword8}:', 1, 10, 1)
+# Variable 9 Slider
+variable5 = st.slider(f'Select Rating of {keyword9}:', 1, 10, 1)
+# Variable 10 Slider
+variable5 = st.slider(f'Select Rating of {keyword10}:', 1, 10, 1)
 
 # Google Cloud Run URL
 #url = 'https://bestcompany-nrfshmhfmq-ew.a.run.app/predict'
 
 url = 'https://bestcompany-nrfshmhfmq-ew.a.run.app/predict'
 
-dict_input = {'variable1': int(variable1), 'variable2': int(variable2),
+dict_input = {'variable1': int(variable1), 
+              'variable2': int(variable2),
               'variable3': int(variable3),
               'variable4': int(variable4),
-              'variable5': int(variable5)}
+              'variable5': int(variable5),
+              'variable6': int(variable6),
+              'variable7': int(variable7),
+              'variable8': int(variable8),
+              'variable9': int(variable9),
+              'variable10': int(variable10),
+}
 
 response = requests.get(url, params=dict_input)
 
