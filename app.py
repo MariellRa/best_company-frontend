@@ -5,7 +5,6 @@ import pandas as pd
 import numpy as np
 import math
 import matplotlib.pyplot as plt
-%matplotlib inline
 from PIL import Image
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 
