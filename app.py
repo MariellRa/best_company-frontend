@@ -170,13 +170,13 @@ Find the wordcloud data:
 
     with st.expander("Word Cloud"):
   
-      fig, ax = plt.subplots()
-      ax.imshow(wordcloud_apple, interpolation='bilinear')
-      ax.axis("off")
-      fig.set_facecolor('white')
-      fig.patch.set_alpha(0.7)
+        fig, ax = plt.subplots()
+        ax.imshow(wordcloud_apple, interpolation='bilinear')
+        ax.axis("off")
+        fig.set_facecolor('white')
+        fig.patch.set_alpha(0.7)
     
-      st.pyplot(fig)
+        st.pyplot(fig)
     
 if company == 'Meta':
     st.write('Meta Platforms, Inc., formerly named Facebook, Inc., and TheFacebook, Inc., is an American multinational technology conglomerate based in Menlo Park, California. The company owns Facebook, Instagram, and WhatsApp, among other products and services.')
