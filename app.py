@@ -83,16 +83,6 @@ plt.ylabel('Total Ratings')
 plt.title('Total Ratings for Companies')
 plt.show()
 
-
-plt.figure(figsize=(8, 6))
-for company in companies:
-    plt.plot(ratings[company], marker='o', label=company)
-plt.xlabel('Years')
-plt.ylabel('Ratings')
-plt.title('Ratings Over Time')
-plt.legend()
-plt.show()
-
 '''
 3) Wordcloud per company. 
 
