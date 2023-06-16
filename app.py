@@ -56,16 +56,8 @@ Once you've provided the necessary information, our advanced algorithm will anal
 
 ##### Please find the overview of your ideal company as a data scientist as follows:
 '''
-st.write('1) First of all, your ideal company is:')
+st.write('1) Your ideal company is:')
 st.write(list(response.json()['Sorted_Company'])[-1])
-
-'''
-The input you provided us:
-Work-Life Balance: 8/10
-Career Growth Opportunities: 6/10
-Collaborative Environment: 4/10
-
-'''
 
 # Company Dashboard
 company = list(response.json()['Sorted_Company'])[-1]
