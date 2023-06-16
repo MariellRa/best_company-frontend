@@ -5,6 +5,7 @@ import pandas as pd
 import numpy as np
 import math
 from wordcloud import WordCloud
+import matplotlib.pyplot as plt
 
 keyword1 = 'Career Growth'
 keyword2 = 'Work Environment'
