@@ -27,26 +27,32 @@ To begin the process, we kindly ask you to input three keywords that reflect you
 The higher the value, the more important the keyword is to you.
 
 '''
+col1, col2 = st.columns(2)
+
+with col1:
+  
 # Variable 1 Slider
-variable1 = st.slider(f'Select Rating of {keyword1}', 1, 10, 1)
+  variable1 = st.slider(f'Select Rating of {keyword1}', 1, 10, 1)
 # Variable 2 Slider
-variable2 = st.slider(f'Select Rating of {keyword2}:', 1, 10, 1)
+  variable2 = st.slider(f'Select Rating of {keyword2}:', 1, 10, 1)
 # Variable 3 Slider
-variable3 = st.slider(f'Select Rating of {keyword3}:', 1, 10, 1)
+  variable3 = st.slider(f'Select Rating of {keyword3}:', 1, 10, 1)
 # Variable 4 Slider
-variable4 = st.slider(f'Select Rating of {keyword4}:', 1, 10, 1)
+  variable4 = st.slider(f'Select Rating of {keyword4}:', 1, 10, 1)
 # Variable 5 Slider
-variable5 = st.slider(f'Select Rating of {keyword5}:', 1, 10, 1)
+  variable5 = st.slider(f'Select Rating of {keyword5}:', 1, 10, 1)
+
+with col2:
 # Variable 6 Slider
-variable6 = st.slider(f'Select Rating of {keyword6}:', 1, 10, 1)
+  variable6 = st.slider(f'Select Rating of {keyword6}:', 1, 10, 1)
 # Variable 7 Slider
-variable7 = st.slider(f'Select Rating of {keyword7}:', 1, 10, 1)
+  variable7 = st.slider(f'Select Rating of {keyword7}:', 1, 10, 1)
 # Variable 8 Slider
-variable8 = st.slider(f'Select Rating of {keyword8}:', 1, 10, 1)
+  variable8 = st.slider(f'Select Rating of {keyword8}:', 1, 10, 1)
 # Variable 9 Slider
-variable9 = st.slider(f'Select Rating of {keyword9}:', 1, 10, 1)
+  variable9 = st.slider(f'Select Rating of {keyword9}:', 1, 10, 1)
 # Variable 10 Slider
-variable10 = st.slider(f'Select Rating of {keyword10}:', 1, 10, 1)
+  variable10 = st.slider(f'Select Rating of {keyword10}:', 1, 10, 1)
 
 # Google Cloud Run URL
 #url = 'https://bestcompany-nrfshmhfmq-ew.a.run.app/predict'
@@ -113,7 +119,7 @@ if company == 'Apple':
     st.write('Apple Inc. is an American multinational technology company headquartered in Cupertino, California. Apple is the world largest technology company by revenue, and the second-largest mobile phone manufacturer in the world.')
     for i in range(2):
         if list(variable_dict)[i] == keyword1:
-            X = f'{company_name}  is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
+            X = f'{company_name} is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
         if list(variable_dict)[i] == keyword2:
             X = f'{company_name} is best know for having a great salary...'
         if list(variable_dict)[i] == keyword3:
