@@ -32,7 +32,7 @@ col1, col2 = st.columns(2)
 with col1:
   
 # Variable 1 Slider
-  variable1 = st.slider(f'Select Rating of {keyword1}', 1, 10, 1)
+  variable1 = st.slider(f'Rate {keyword1}', 1, 10, 1)
 # Variable 2 Slider
   variable2 = st.slider(f'Select Rating of {keyword2}:', 1, 10, 1)
 # Variable 3 Slider
