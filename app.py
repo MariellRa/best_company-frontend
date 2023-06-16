@@ -161,9 +161,7 @@ if company == 'Apple':
         if list(variable_dict)[i] == keyword10:
             Y = f'In addition to this...{company_name} is best know for having a great management...'
     st.write(X + Y)
-'''
-    Find the wordcloud data:
-'''
+
     apple_cloud_data = 'place work, smart people, environment people, work life, company work, big company, work smart, lot perk, well manage, pay phone, team work, work environment, life balance, people work, company culture, work apple, salary benefit, work culture, worklife balance, get work, work lot, excite work, really enjoy, culture people, fast pace, benefit pay, environment work, interest project, talented people, perk benefit, growth opportunities, lot opportunities, experience work, learn lot, opportunities grow, nice place, work people, depend team, interest work, want work, work benefit, work big, nice work, love work, work products, products impact, impact world, health insurance'
     
     wordcloud_apple = WordCloud(width=800, height=400, background_color='white', contour_width=3, contour_color='steelblue', random_state=42).generate(apple_cloud_data)
