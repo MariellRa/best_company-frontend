@@ -26,7 +26,10 @@ keyword10 = 'Role scope'
 Welcome to our app, where we assist you in finding your ideal company as a data scientist. 
 
 '''
-st.sidebar.write("To begin the process, we kindly ask you to rate ten keywords to reflect your preferences. These keywords will help our algorithm identify the best matching companies for you based on your specified criteria. Please assign each a value from 0 to 10. The higher the value, the more important the keyword is to you.")
+st.sidebar.write("To begin the process, we kindly ask you to rate ten keywords to reflect your preferences.") 
+st.sidebar.write("These keywords will help our algorithm identify the best matching companies for you based on your specified criteria.") 
+
+st.sidebar.write("Please assign each a value from 0 to 10. The higher the value, the more important the keyword is to you.")
   
 # Variable 1 Slider
 variable1 = st.sidebar.slider(f'{keyword1}', 0, 10, 0)
