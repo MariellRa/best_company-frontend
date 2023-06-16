@@ -169,12 +169,14 @@ if company == 'Apple':
 
     apple = 'place work, smart people, environment people, work life, company work, big company, work smart, lot perk, well manage, pay phone, team work, work environment, life balance, people work, company culture, work apple, salary benefit, work culture, worklife balance, get work, work lot, excite work, really enjoy, culture people, fast pace, benefit pay, environment work, interest project, talented people, perk benefit, growth opportunities, lot opportunities, experience work, learn lot, opportunities grow, nice place, work people, depend team, interest work, want work, work benefit, work big, nice work, love work, work products, products impact, impact world, health insurance'
     mask2 = np.array(Image.open("paint1a.png"))
-    wordcloud_apple = WordCloud(font_path = font_path, max_font_size=40, mask=mask2, stopwords=stopwords, background_color='white', colormap='Paired').generate(apple)
-    wordcloud_apple.generate(apple)
-    plt.imshow(wordcloud_apple, interpolation='bilinear')
-    plt.axis("off")
-    plt.show()
-    st.pyplot(plt)
+    wordcloud_apple = WordCloud(width=800, height=400, background_color='white', contour_width=3, contour_color='steelblue', random_state=42).generate(apple)
+    fig, ax = plt.subplots()
+    ax.imshow(wordcloud, interpolation='bilinear')
+    ax.axis("off")
+    fig.set_edgecolor('round')
+    fig.set_facecolor('white')
+    fig.patch.set_alpha(0.7)
+    st.pyplot(fig)
     
 if company == 'Meta':
     st.write('Meta Platforms, Inc., formerly named Facebook, Inc., and TheFacebook, Inc., is an American multinational technology conglomerate based in Menlo Park, California. The company owns Facebook, Instagram, and WhatsApp, among other products and services.')
