@@ -26,9 +26,7 @@ To begin the process, we kindly ask you to rate ten keywords to reflect your pre
 
 These keywords will help our algorithm identify the best matching companies for you based on your specified criteria.
 
-Please assign each a value from 1 to 10. 
-
-The higher the value, the more important the keyword is to you.
+Please assign each a value from 1 to 10. The higher the value, the more important the keyword is to you.
 
 '''
 col1, col2 = st.columns(2)
