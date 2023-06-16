@@ -26,7 +26,7 @@ To begin the process, we kindly ask you to rate ten keywords to reflect your pre
 
 Please assign each a value from 1 to 10. 
 
-The higher the value, the more important the keyword is to you.
+The higher the value, the more important the keyword is to you:
 
 '''
 col1, col2 = st.columns(2)
