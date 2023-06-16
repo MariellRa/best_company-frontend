@@ -1,1 +1,7 @@
-WordCloud
+wordcloud
+streamlit
+datetime
+requests
+pandas
+numpy
+math
