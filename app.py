@@ -184,8 +184,8 @@ if company == 'Apple':
     st.pyplot(fig)
 
     ratings_data_apple = pd.DataFrame({
-        "AppleRatings": ["1","2","3","4","5"],
-        "RatingsbyEmployees": [0.039,0.020,0.122,0.291,0.528]
+        "AppleRatings": ["5","4","3","2","1"],
+        "RatingsbyEmployees": [0.528,0.291,0.122,0.020,0.039]
         })
   
     ratings_bar_chart_apple = alt.Chart(ratings_data_apple).mark_bar().encode(
