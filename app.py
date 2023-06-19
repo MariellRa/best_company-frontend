@@ -194,7 +194,7 @@ if company == 'Apple':
     ratings_bar_chart_apple = alt.Chart(ratings_data_apple).mark_bar().encode(
             x='sum(RatingsbyEmployees)',
             y='AppleRatings',
-            color='AppleRatings,
+            color='AppleRatings',
             sort='ascending''
         )
     st.altair_chart(ratings_bar_chart_apple, use_container_width=True)
