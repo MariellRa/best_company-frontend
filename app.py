@@ -7,6 +7,7 @@ import math
 import matplotlib.pyplot as plt
 from PIL import Image
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+import altair as alt
 
 keyword1 = 'Career Growth'
 keyword2 = 'Work Environment'
@@ -181,6 +182,18 @@ if company == 'Apple':
     fig.patch.set_alpha(0.7)
     
     st.pyplot(fig)
+
+    ratings_data_apple = pd.DataFrame({
+        "CompanyRatings": ["1","2","3","4","5"],
+        "RatingsbyEmployees": ["0.039","0.020","0.122","0.291","0.528"]
+        })
+  
+    ratings_bar_chart_apple = alt.Chart(ratings_data_apple).mark_bar().encode(
+            x='CompanyRatings',
+            y='RatingsbyEmployees',
+            color='CompanyRatings'
+        )
+    st.altair_chart(ratings_bar_chart_apple, use_container_width=True)
     
 if company == 'Meta':
     st.write('Meta Platforms, Inc., formerly named Facebook, Inc., and TheFacebook, Inc., is an American multinational technology conglomerate based in Menlo Park, California. The company owns Facebook, Instagram, and WhatsApp, among other products and services.')
