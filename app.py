@@ -183,6 +183,8 @@ if company == 'Apple':
     
     st.pyplot(fig)
 
+    st.write('How former Employees have rated Apple?')
+  
     ratings_data_apple = pd.DataFrame({
         "AppleRatings": ["5","4","3","2","1"],
         "RatingsbyEmployees": [0.528,0.291,0.122,0.020,0.039]
