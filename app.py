@@ -273,14 +273,14 @@ if company == 'Meta':
   
     ratings_data_meta = pd.DataFrame({
         "MetaRatings": ["5","4","3","2","1"],
-        "RatingsbyEmployees": [045.7,030.1,016.4,005.0,002.7]  
+        "RatingsbyMetaEmployees": [045.7,030.1,016.4,005.0,002.7]  
       })
 
     ratings_data_meta['MetaRatings'] = ratings_data_meta['MetaRatings'].astype(int)
     ratings_data_meta = ratings_data_meta.sort_values('MetaRatings', ascending=False)
 
-    ratings_bar_chart_meta = alt.Chart(ratings_data_apple).mark_bar().encode(
-        x='sum(RatingsbyEmployees)',
+    ratings_bar_chart_meta = alt.Chart(ratings_data_meta).mark_bar().encode(
+        x='sum(RatingsbyMetaEmployees)',
         y=alt.Y('MetaRatings:N', sort='-x'),  # Sort bars based on 'x'
         color='MetaRatings:N'
     )
