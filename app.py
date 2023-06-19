@@ -188,7 +188,7 @@ st.write('Results are in %')
   
 ratings_data_apple = pd.DataFrame({
     "AppleRatings": ["5","4","3","2","1"],
-    "RatingsbyEmployees": [0.528,0.291,0.122,0.020,0.039]  
+    "RatingsbyEmployees": [052.8,029.1,012.2,002.0,003.9]  
 })
 
 # Convert 'AppleRatings' to int for correct sorting
