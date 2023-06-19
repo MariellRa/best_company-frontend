@@ -358,7 +358,7 @@ if company == 'Microsoft':
 
     with st.expander("How former Employees have rated Microsoft?"):
   
-        ratings_data_meta = pd.DataFrame({
+        ratings_data_microsoft = pd.DataFrame({
             "Ratings": ["5","4","3","2","1"],
             "RatingsbyMicrosoftEmployees": [055.0,030.1,012.0,001.3,001.6]  
         })
