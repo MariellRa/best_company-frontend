@@ -186,22 +186,22 @@ if company == 'Apple':
 st.write('How former Employees have rated Apple?')
 st.write('Results are in %') 
   
-    ratings_data_apple = pd.DataFrame({
-        "AppleRatings": ["5","4","3","2","1"],
-        "RatingsbyEmployees": [0.528,0.291,0.122,0.020,0.039]  
-  })
+ratings_data_apple = pd.DataFrame({
+    "AppleRatings": ["5","4","3","2","1"],
+    "RatingsbyEmployees": [0.528,0.291,0.122,0.020,0.039]  
+})
 
 # Convert 'AppleRatings' to int for correct sorting
-    ratings_data_apple['AppleRatings'] = ratings_data_apple['AppleRatings'].astype(int)
+ratings_data_apple['AppleRatings'] = ratings_data_apple['AppleRatings'].astype(int)
 
 # Sort 'AppleRatings' in descending order
-    ratings_data_apple = ratings_data_apple.sort_values('AppleRatings', ascending=False)
+ratings_data_apple = ratings_data_apple.sort_values('AppleRatings', ascending=False)
 
-    ratings_bar_chart_apple = alt.Chart(ratings_data_apple).mark_bar().encode(
-        x='sum(RatingsbyEmployees)',
-        y=alt.Y('AppleRatings:N', sort='-x'),  # Sort bars based on 'x'
-        color='AppleRatings:N'
-    )
+ratings_bar_chart_apple = alt.Chart(ratings_data_apple).mark_bar().encode(
+    x='sum(RatingsbyEmployees)',
+    y=alt.Y('AppleRatings:N', sort='-x'),  # Sort bars based on 'x'
+    color='AppleRatings:N'
+)
 
 st.altair_chart(ratings_bar_chart_apple, use_container_width=True)
 
