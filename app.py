@@ -540,7 +540,7 @@ if company == 'Google':
             color='Ratings:N'
         )
 
-        st.altair_chart(ratings_bar_chart_microsoft, use_container_width=True)
+        st.altair_chart(ratings_bar_chart_google, use_container_width=True)
 
     with st.expander("Reviews most people found helpful"):
         st.write("1. Pros: Great tech infrastructure systems, but it's hard to know which ones to use. This is usually served by having senior team members who know what they're doing, but teams in Finance generally don't have that (employee churn). Cons: Innovation is nonexistent: too many in the company are from non-tech / corporate backgrounds. This is especially true for those in management positions. As a result, decisions made are often too conservative. There are lots of talking points about how the org is innovating what a finance department can do but most of the people who do the innovating leave as soon as they can. Not a gateway to Google: I joined thinking that the I could work in Finance for a while learning new skills and working on cool projects on my way to moving into the eng org. This is generally not the case. What I didn't realize when I joined is that I was on a Finance ladder. As a result, transferring to the eng org involves a full interview process. These interviews are (from many people I've talked to) more stringent than the external ones. Ask which ladder you'll be placed on before accepting the offer! (This is also why the offer was FAR lower than what I expected).")
