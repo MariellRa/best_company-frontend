@@ -271,6 +271,31 @@ if company == 'Meta':
     
     st.pyplot(fig)
 
+st.write('How former Employees have rated Meta?')
+  
+ratings_data_meta = pd.DataFrame({
+    "MetaRatings": ["5","4","3","2","1"],
+    "RatingsbyEmployees": [045.7,030.1,016.4,005.0,002.7]  
+})
+
+ratings_data_meta['MetaRatings'] = ratings_data_meta['MetaRatings'].astype(int)
+
+ratings_data_meta = ratings_data_meta.sort_values('MetaRatings', ascending=False)
+
+ratings_bar_chart_meta = alt.Chart(ratings_data_apple).mark_bar().encode(
+    x='sum(RatingsbyEmployees)',
+    y=alt.Y('MetaRatings:N', sort='-x'),  # Sort bars based on 'x'
+    color='MetaRatings:N'
+)
+
+st.altair_chart(ratings_bar_chart_meta, use_container_width=True)
+
+st.markdown("Former employees of Meta have said:")
+st.write("1. Pros: Good perks and comp, coworkers are nice and fun. Cons: Very competitive environment. No possible to succeed if you don’t work 60+ hours. Focus on short term impact due to performance cycle every 6 months. No clarity on expectations of roles. Mix signals from leadership about culture.")
+st.write("2. Pros: Great opportunity to work with the smartest people from the world - most products have billions of users so your work have a big scope - beautiful campus, good snacks, foods, and benefits. Cons: If you are a data scientist, you need to really care about two things: - Impact. Unlike SWE, who can prove their impacts by finishing pre-planned coding projects and rolling out pre-planned features, data scientist does not automatically get credit if you only finish beautiful analyses. You have to suggest eng team to apply your suggestion from analysis, and prove how much of the product growth are from your analysis. So sometimes your impact can be subjective. - Skillset. You may be asked to do a lot of ad-hoc analyses from eng team, which I am sure are very important and can guide engineers whether to implement certain features, but that will prevent you from doing some deep dive analyses and learning some new techniques in data analysis. Maybe after a year or two, you will find that you did not build any statistical models or haven't touched any machine learning. But that's the skillset what other companies will ask for when you apply new job. Who cares you did how many ad-hoc analyses or AB test or wrote how many data pipelines. It's the fancy machine learning model that will earn you respect. Also, total pay is lower than SWE for the same level.")
+st.write("3. Pros: Food - Health care benefits - Fringe benefits - Nice campus - Corporate shuttles - State of the art tech stack - Extremely smart coworkers - Visionary and bold top management. Cons: Work/life balance can get hurt as a lot of folks at the office are single and do not understand the needs of having a family. The company is getting bigger. This means more room for backroom politics and aligning people without ruffling people's feathers. Very talented individual contributors (and/or good at politics) are being promoted. As a result, instead of having well rounded managers, you end up having either extremely career driven or super awkward managers. Some of those middle managers are very green, making it even more painful. Some women feel like they have to be extra tough at work because of the Leanin coolaid, making them very hard to work with.")
+    
+
 if company == 'Microsoft':
     st.write('Microsoft Corporation is an American multinational technology corporation headquartered in Redmond, Washington. Microsofts best-known software products are the Windows line of operating systems, the Microsoft Office suite, and the Internet Explorer and Edge web browsers.')
     for i in range(2):
