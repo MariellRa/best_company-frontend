@@ -3,3 +3,5 @@ pandas
 numpy
 matplotlib
 pillow
+streamlit_gallery
+streamlit_gallery.utils.page
