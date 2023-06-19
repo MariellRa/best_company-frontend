@@ -20,6 +20,21 @@ keyword9 = 'Learning & Development'
 keyword10 = 'Role scope'
 
 
+def main():
+    page = page_group("p")
+
+    with st.sidebar:
+        st.title("Menu")
+
+        with st.expander("✨ APPS", True):
+            page.item("Best Company", apps.gallery, default=True)
+
+    page.show()
+
+if __name__ == "__main__":
+    st.set_page_config(page_title="Find DS Company", page_icon="🎈", layout="wide")
+    main()
+
 '''
 # Welcome to app :blue[Find DS Company]!
 
