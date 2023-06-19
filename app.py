@@ -28,8 +28,6 @@ st.sidebar.write("Find DS Company")
 Welcome to our app, where we assist you in finding your ideal company as a data scientist. 
 
 '''
-st.markdown("**Rate the Importance of 10 Keywords**")
-
 st.write("To begin the process, we kindly ask you to rate ten keywords to reflect your preferences.") 
 st.write("These keywords will help our algorithm identify the best matching companies for you based on your specified criteria.") 
 
