@@ -268,23 +268,23 @@ if company == 'Meta':
     
     st.pyplot(fig)
 
-    st.write('How former Employees have rated Meta?')
+    with st.expander("How former Employees have rated Meta?"):
   
-    ratings_data_meta = pd.DataFrame({
-        "Ratings": ["5","4","3","2","1"],
-        "RatingsbyMetaEmployees": [045.7,030.1,016.4,005.0,002.7]  
-      })
+        ratings_data_meta = pd.DataFrame({
+            "Ratings": ["5","4","3","2","1"],
+            "RatingsbyMetaEmployees": [045.7,030.1,016.4,005.0,002.7]  
+          })
 
-    ratings_data_meta['Ratings'] = ratings_data_meta['Ratings'].astype(int)
-    ratings_data_meta = ratings_data_meta.sort_values('Ratings', ascending=False)
+        ratings_data_meta['Ratings'] = ratings_data_meta['Ratings'].astype(int)
+        ratings_data_meta = ratings_data_meta.sort_values('Ratings', ascending=False)
 
-    ratings_bar_chart_meta = alt.Chart(ratings_data_meta).mark_bar().encode(
-        x='sum(RatingsbyMetaEmployees)',
-        y=alt.Y('Ratings:N', sort='-x'), 
-        color='Ratings:N'
-    )
+        ratings_bar_chart_meta = alt.Chart(ratings_data_meta).mark_bar().encode(
+            x='sum(RatingsbyMetaEmployees)',
+            y=alt.Y('Ratings:N', sort='-x'), 
+            color='Ratings:N'
+        )
 
-    st.altair_chart(ratings_bar_chart_meta, use_container_width=True)
+        st.altair_chart(ratings_bar_chart_meta, use_container_width=True)
 
     with st.expander("Reviews most people found helpful"):
         st.write("1. Pros: Good perks and comp, coworkers are nice and fun. Cons: Very competitive environment. No possible to succeed if you don’t work 60+ hours. Focus on short term impact due to performance cycle every 6 months. No clarity on expectations of roles. Mix signals from leadership about culture.")
@@ -350,23 +350,23 @@ if company == 'Microsoft':
     
     st.pyplot(fig)
 
-    st.write('How former Employees have rated Microsoft?')
+    with st.expander("How former Employees have rated Microsoft?"):
   
-    ratings_data_meta = pd.DataFrame({
-        "Ratings": ["5","4","3","2","1"],
-        "RatingsbyMicrosoftEmployees": [055.0,030.1,012.0,001.3,001.6]  
-      })
+        ratings_data_meta = pd.DataFrame({
+            "Ratings": ["5","4","3","2","1"],
+            "RatingsbyMicrosoftEmployees": [055.0,030.1,012.0,001.3,001.6]  
+        })
 
-    ratings_data_microsoft['Ratings'] = ratings_data_microsoft['Ratings'].astype(int)
-    ratings_data_microsoft = ratings_data_microsoft.sort_values('Ratings', ascending=False)
+        ratings_data_microsoft['Ratings'] = ratings_data_microsoft['Ratings'].astype(int)
+        ratings_data_microsoft = ratings_data_microsoft.sort_values('Ratings', ascending=False)
 
-    ratings_bar_chart_microsoft = alt.Chart(ratings_data_microsoft).mark_bar().encode(
-        x='sum(RatingsbyMicrosoftEmployees)',
-        y=alt.Y('Ratings:N', sort='-x'), 
-        color='Ratings:N'
-    )
+        ratings_bar_chart_microsoft = alt.Chart(ratings_data_microsoft).mark_bar().encode(
+            x='sum(RatingsbyMicrosoftEmployees)',
+            y=alt.Y('Ratings:N', sort='-x'), 
+            color='Ratings:N'
+        )
 
-    st.altair_chart(ratings_bar_chart_microsoft, use_container_width=True)
+        st.altair_chart(ratings_bar_chart_microsoft, use_container_width=True)
 
     with st.expander("Reviews most people found helpful"):
         st.write("1. Pros: Brand; serves as a launchpad + Scope of work is broad + Lots of learnings- both technical and management skills. Cons: There are islands of talents, some are good but mostly average Must 'kiss-ass' to get visibility, promotion, and bonus Very slow pace of work and career growth.")
@@ -432,23 +432,23 @@ if company == 'Amazon':
     
     st.pyplot(fig)
 
-    st.write('How former Employees have rated Amazon?')
+    with st.expander("How former Employees have rated Amazon?"):
   
-    ratings_data_amazon = pd.DataFrame({
-        "Ratings": ["5","4","3","2","1"],
-        "RatingsbyAmazonEmployees": [043.7,034.8,010.4,004.8,006.3]  
-      })
+        ratings_data_amazon = pd.DataFrame({
+            "Ratings": ["5","4","3","2","1"],
+            "RatingsbyAmazonEmployees": [043.7,034.8,010.4,004.8,006.3]  
+        })
 
-    ratings_data_amazon['Ratings'] = ratings_data_amazon['Ratings'].astype(int)
-    ratings_data_amazon = ratings_data_amazon.sort_values('Ratings', ascending=False)
+        ratings_data_amazon['Ratings'] = ratings_data_amazon['Ratings'].astype(int)
+        ratings_data_amazon = ratings_data_amazon.sort_values('Ratings', ascending=False)
 
-    ratings_bar_chart_amazon = alt.Chart(ratings_data_amazon).mark_bar().encode(
-        x='sum(RatingsbyAmazonEmployees)',
-        y=alt.Y('Ratings:N', sort='-x'), 
-        color='Ratings:N'
-    )
+        ratings_bar_chart_amazon = alt.Chart(ratings_data_amazon).mark_bar().encode(
+            x='sum(RatingsbyAmazonEmployees)',
+            y=alt.Y('Ratings:N', sort='-x'), 
+            color='Ratings:N'
+        )
 
-    st.altair_chart(ratings_bar_chart_microsoft, use_container_width=True)
+        st.altair_chart(ratings_bar_chart_microsoft, use_container_width=True)
 
     with st.expander("Reviews most people found helpful"):
         st.write("1. Pros: I hear this is certainly not true for every team, but I think my team is great and I’m very happy at Amazon. - My work life balance is great. I hardly ever have to work more than 40 hours/week. The few times that I do, I don’t particularly mind since I rarely have to. - My team and manager are really chill. Nobody cares when I get to the office, when I leave, or exactly how many hours I was there. I’m certainly expected to get my work done, but I feel like I have a lot of freedom to work on my projects however I’d like. I also work from home about once a week. - This is especially true for Amazon Web Services (where I work) but I feel fortunate that I can learn how to use all the services on AWS for free. My field uses AWS pretty extensively, but it’s normally pretty expensive if you want to use it a lot. We get it all for free and we use it a lot in our everyday work, so I feel pretty lucky to be able to learn it. Cons: Compared to other tech companies Amazon is undoubtedly very cheap. We have to pay for all of our own food, the food is expensive, and it’s also mediocre. Parking isn’t even free. Our benefits are okay but not as good as other tech companies. Our office space looks fine but pretty minimalist. I find this to be minor in the grand scheme of things but it’s definitely noticeable. I dislike being on-call. I’m on call for a week at a time about once every two months. During that time you’re handed a pager and you have to be available 24/7 for issues. This could potentially be on a random weekend afternoon, 8 am in the morning, or worst of all, the dreaded 3 am pager ringing. Fortunately I’m not on-call all that often so I just suck it up and deal with it whenever it rolls around.")
@@ -514,33 +514,28 @@ if company == 'Google':
     
     st.pyplot(fig)
 
-    st.write('How former Employees have rated Google?')
+    with st.expander("How former Employees have rated Google?"):
   
-    ratings_data_google = pd.DataFrame({
-        "Ratings": ["5","4","3","2","1"],
-        "RatingsbyGoogleEmployees": [066.7,027.1,004.3,001.4,000.5]  
-      })
+        ratings_data_google = pd.DataFrame({
+            "Ratings": ["5","4","3","2","1"],
+            "RatingsbyGoogleEmployees": [066.7,027.1,004.3,001.4,000.5]  
+        })
 
-    ratings_data_google['Ratings'] = ratings_data_google['Ratings'].astype(int)
-    ratings_data_google = ratings_data_google.sort_values('Ratings', ascending=False)
+        ratings_data_google['Ratings'] = ratings_data_google['Ratings'].astype(int)
+        ratings_data_google = ratings_data_google.sort_values('Ratings', ascending=False)
 
-    ratings_bar_chart_google = alt.Chart(ratings_data_google).mark_bar().encode(
-        x='sum(RatingsbyGoogleEmployees)',
-        y=alt.Y('Ratings:N', sort='-x'), 
-        color='Ratings:N'
-    )
+        ratings_bar_chart_google = alt.Chart(ratings_data_google).mark_bar().encode(
+            x='sum(RatingsbyGoogleEmployees)',
+            y=alt.Y('Ratings:N', sort='-x'), 
+            color='Ratings:N'
+        )
 
-    st.altair_chart(ratings_bar_chart_microsoft, use_container_width=True)
+        st.altair_chart(ratings_bar_chart_microsoft, use_container_width=True)
 
     with st.expander("Reviews most people found helpful"):
         st.write("1. Pros: Great tech infrastructure systems, but it's hard to know which ones to use. This is usually served by having senior team members who know what they're doing, but teams in Finance generally don't have that (employee churn). Cons: Innovation is nonexistent: too many in the company are from non-tech / corporate backgrounds. This is especially true for those in management positions. As a result, decisions made are often too conservative. There are lots of talking points about how the org is innovating what a finance department can do but most of the people who do the innovating leave as soon as they can. Not a gateway to Google: I joined thinking that the I could work in Finance for a while learning new skills and working on cool projects on my way to moving into the eng org. This is generally not the case. What I didn't realize when I joined is that I was on a Finance ladder. As a result, transferring to the eng org involves a full interview process. These interviews are (from many people I've talked to) more stringent than the external ones. Ask which ladder you'll be placed on before accepting the offer! (This is also why the offer was FAR lower than what I expected).")
         st.write("2. Pros: The money’s great! The free gourmet food and snacks are never-ending Working at Google, you're exposed to amazing people and great thinkers Googlers feel like they are really living in the future Dogs are welcome! Cons: Learning is self-driven The competition is brutal Supervision is minimal.")
         st.write("3. Pros: Great job security Clear path to promotion Smart colleagues Excellent career development resources Diverse workplace Creative freedom and autonomy Effective feedback processes. Cons: Can be quite political Multiple teams working on the same project Some loud and disrespectful employees Sexual and racial harassment/discrimination happens more often than it should given their external messaging/image they project Not true to their stated ethics.")
 
-
-'''
-
-Additionally: Interviews 
-'''
 
 
