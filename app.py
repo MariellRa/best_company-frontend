@@ -438,11 +438,7 @@ if company == 'Google':
 
 '''
 
-4) Rating with chart.
-
-5) 3 most highly-valued cons/pros per company.
-
-6) Interviews 
+Additionally: Interviews 
 '''
 
 
