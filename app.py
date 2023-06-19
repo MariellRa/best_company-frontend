@@ -189,7 +189,7 @@ if company == 'Apple':
         })
   
     ratings_bar_chart_apple = alt.Chart(ratings_data_apple).mark_bar().encode(
-            x='sum(RatingsbyEmployees, %)',
+            x='sum(RatingsbyEmployees)',
             y='AppleRatings',
             color='AppleRatings'
         )
