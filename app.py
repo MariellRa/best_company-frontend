@@ -188,16 +188,22 @@ if company == 'Apple':
   
     ratings_data_apple = pd.DataFrame({
         "AppleRatings": ["5","4","3","2","1"],
-        "RatingsbyEmployees": [0.528,0.291,0.122,0.020,0.039]
-        })
-  
+        "RatingsbyEmployees": [0.528,0.291,0.122,0.020,0.039]  
+  })
+
+# Convert 'AppleRatings' to int for correct sorting
+    ratings_data_apple['AppleRatings'] = ratings_data_apple['AppleRatings'].astype(int)
+
+# Sort 'AppleRatings' in descending order
+    ratings_data_apple = ratings_data_apple.sort_values('AppleRatings', ascending=False)
+
     ratings_bar_chart_apple = alt.Chart(ratings_data_apple).mark_bar().encode(
-            x='sum(RatingsbyEmployees)',
-            y='AppleRatings',
-            color='AppleRatings',
-            sort='ascending'
-        )
-    st.altair_chart(ratings_bar_chart_apple, use_container_width=True)
+        x='sum(RatingsbyEmployees)',
+        y=alt.Y('AppleRatings:N', sort='-x'),  # Sort bars based on 'x'
+        color='AppleRatings:N'
+    )
+
+st.altair_chart(ratings_bar_chart_apple, use_container_width=True)
 
     st.markdown("**Former employees of Apple have said:**")
     st.write("1. Pros: There is a certain recognition you receive when others hear you work for Apple with it being the high flyer in the industry. There is some flexibility in the hours as long as you get your work done. Cons: Ivory tower management that tends to be in the way more than helping. They often make decisions that the people who do the work don't understand and hurts productivity. After cutting down benefits quite a bit during the lean years (mid 90's), has done nothing to bring any of them back now that we are making a killing.")
