@@ -185,8 +185,6 @@ if company == 'Apple':
     
         st.pyplot(fig)
 
-        st.write("A word cloud is a collection, or cluster, of words depicted in different sizes. The bigger and bolder the word appears, the more often it’s mentioned and the more important it is.")
-
     with st.expander("How former Employees have rated Apple?"):
         ratings_data_apple = pd.DataFrame({
             "Ratings": ["5","4","3","2","1"],
