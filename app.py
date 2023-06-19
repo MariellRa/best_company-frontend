@@ -19,8 +19,8 @@ keyword8 = 'Team work'
 keyword9 = 'Learning & Development'
 keyword10 = 'Role scope'
 
-st.sidebar.markdown("**Menu**")
-st.sidebar.write("Find DS Company App")
+st.sidebar.markdown("**Apps**")
+st.sidebar.write("Find DS Company")
 
 '''
 # Welcome to app :blue[Find DS Company]!
