@@ -11,3 +11,4 @@ streamlit-player
 streamlit-quill
 pandas-profiling
 requests
+altair
