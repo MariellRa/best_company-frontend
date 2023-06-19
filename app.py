@@ -184,7 +184,6 @@ if company == 'Apple':
     st.pyplot(fig)
 
 st.write('How former Employees have rated Apple?')
-st.write('Results are in %') 
   
 ratings_data_apple = pd.DataFrame({
     "AppleRatings": ["5","4","3","2","1"],
