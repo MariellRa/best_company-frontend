@@ -195,7 +195,7 @@ if company == 'Apple':
             x='sum(RatingsbyEmployees)',
             y='AppleRatings',
             color='AppleRatings',
-            sort='ascending''
+            sort="ascending"'
         )
     st.altair_chart(ratings_bar_chart_apple, use_container_width=True)
 
