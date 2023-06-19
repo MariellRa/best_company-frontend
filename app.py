@@ -19,6 +19,9 @@ keyword8 = 'Team work'
 keyword9 = 'Learning & Development'
 keyword10 = 'Role scope'
 
+with st.sidebar:
+    st.[element_name]
+
 '''
 # Welcome to app :blue[Find DS Company]!
 
