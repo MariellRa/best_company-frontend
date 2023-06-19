@@ -7,8 +7,6 @@ import math
 import matplotlib.pyplot as plt
 from PIL import Image
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
-from streamlit_gallery import components
-from streamlit_gallery.utils.page import page_group
 
 keyword1 = 'Career Growth'
 keyword2 = 'Work Environment'
