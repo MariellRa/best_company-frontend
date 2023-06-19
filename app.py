@@ -86,9 +86,9 @@ if response.status_code != 200:
 
 
 expander = st.expander("HOW THIS WORKS?")
-    expander.write(\"\"\"
+    expander.write("\
         Once you've provided the necessary information, our advanced algorithm will analyze your data and generate a list of companies that align with  your preferences. You'll receive valuable insights about each company's  work-life balance, career growth opportunities, and collaborative  environment, enabling you to make an informed decision about your future workplace as a data scientist.
-    \"\"\")
+    \")
 
 '''
 
