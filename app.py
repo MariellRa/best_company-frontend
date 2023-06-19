@@ -183,31 +183,29 @@ if company == 'Apple':
     
     st.pyplot(fig)
 
-st.write('How former Employees have rated Apple?')
+    st.write('How former Employees have rated Apple?')
   
-ratings_data_apple = pd.DataFrame({
-    "AppleRatings": ["5","4","3","2","1"],
-    "RatingsbyEmployees": [052.8,029.1,012.2,002.0,003.9]  
-})
+    ratings_data_apple = pd.DataFrame({
+        "AppleRatings": ["5","4","3","2","1"],
+        "RatingsbyEmployees": [052.8,029.1,012.2,002.0,003.9]  
+    })
 
-# Convert 'AppleRatings' to int for correct sorting
-ratings_data_apple['AppleRatings'] = ratings_data_apple['AppleRatings'].astype(int)
+    ratings_data_apple['AppleRatings'] = ratings_data_apple['AppleRatings'].astype(int)
 
-# Sort 'AppleRatings' in descending order
-ratings_data_apple = ratings_data_apple.sort_values('AppleRatings', ascending=False)
+    ratings_data_apple = ratings_data_apple.sort_values('AppleRatings', ascending=False)
 
-ratings_bar_chart_apple = alt.Chart(ratings_data_apple).mark_bar().encode(
-    x='sum(RatingsbyEmployees)',
-    y=alt.Y('AppleRatings:N', sort='-x'),  # Sort bars based on 'x'
-    color='AppleRatings:N'
-)
+    ratings_bar_chart_apple = alt.Chart(ratings_data_apple).mark_bar().encode(
+        x='sum(RatingsbyEmployees)',
+        y=alt.Y('AppleRatings:N', sort='-x'),  # Sort bars based on 'x'
+        color='AppleRatings:N'
+    )
 
-st.altair_chart(ratings_bar_chart_apple, use_container_width=True)
+    st.altair_chart(ratings_bar_chart_apple, use_container_width=True)
 
-st.markdown("Former employees of Apple have said:")
-st.write("1. Pros: There is a certain recognition you receive when others hear you work for Apple with it being the high flyer in the industry. There is some flexibility in the hours as long as you get your work done. Cons: Ivory tower management that tends to be in the way more than helping. They often make decisions that the people who do the work don't understand and hurts productivity. After cutting down benefits quite a bit during the lean years (mid 90's), has done nothing to bring any of them back now that we are making a killing.")
-st.write("2. Pros: Salary, Food and Free shuttle bus from MRT-station. Cons: Too much micro-management Always monitored by management. Can barely go to toilet without getting message from boss about being inactive. Too high expectations from Management to hit KPI - they care more about quantity than quality. No team morale. Management don't even introduce you to your colleagues when you start. No communication with management except for when you do something *wrong* like taking too long to get your coffee.")
-st.write("3. Pros: At the beginning you can learn a lot and see how a big company works. Depending on teams, data scientists have a lot of freedom. Cons: Unstructured. Infra structure is not as great as some other big companies. Growth is slow which is natural for big companies.")
+    st.markdown("Former employees of Apple have said:")
+    st.write("1. Pros: There is a certain recognition you receive when others hear you work for Apple with it being the high flyer in the industry. There is some flexibility in the hours as long as you get your work done. Cons: Ivory tower management that tends to be in the way more than helping. They often make decisions that the people who do the work don't understand and hurts productivity. After cutting down benefits quite a bit during the lean years (mid 90's), has done nothing to bring any of them back now that we are making a killing.")
+    st.write("2. Pros: Salary, Food and Free shuttle bus from MRT-station. Cons: Too much micro-management Always monitored by management. Can barely go to toilet without getting message from boss about being inactive. Too high expectations from Management to hit KPI - they care more about quantity than quality. No team morale. Management don't even introduce you to your colleagues when you start. No communication with management except for when you do something *wrong* like taking too long to get your coffee.")
+    st.write("3. Pros: At the beginning you can learn a lot and see how a big company works. Depending on teams, data scientists have a lot of freedom. Cons: Unstructured. Infra structure is not as great as some other big companies. Growth is slow which is natural for big companies.")
     
 
   
@@ -271,29 +269,28 @@ if company == 'Meta':
     
     st.pyplot(fig)
 
-st.write('How former Employees have rated Meta?')
+    st.write('How former Employees have rated Meta?')
   
-ratings_data_meta = pd.DataFrame({
-    "MetaRatings": ["5","4","3","2","1"],
-    "RatingsbyEmployees": [045.7,030.1,016.4,005.0,002.7]  
-})
+    ratings_data_meta = pd.DataFrame({
+        "MetaRatings": ["5","4","3","2","1"],
+        "RatingsbyEmployees": [045.7,030.1,016.4,005.0,002.7]  
+      })
 
-ratings_data_meta['MetaRatings'] = ratings_data_meta['MetaRatings'].astype(int)
+    ratings_data_meta['MetaRatings'] = ratings_data_meta['MetaRatings'].astype(int)
+    ratings_data_meta = ratings_data_meta.sort_values('MetaRatings', ascending=False)
 
-ratings_data_meta = ratings_data_meta.sort_values('MetaRatings', ascending=False)
+    ratings_bar_chart_meta = alt.Chart(ratings_data_apple).mark_bar().encode(
+        x='sum(RatingsbyEmployees)',
+        y=alt.Y('MetaRatings:N', sort='-x'),  # Sort bars based on 'x'
+        color='MetaRatings:N'
+    )
 
-ratings_bar_chart_meta = alt.Chart(ratings_data_apple).mark_bar().encode(
-    x='sum(RatingsbyEmployees)',
-    y=alt.Y('MetaRatings:N', sort='-x'),  # Sort bars based on 'x'
-    color='MetaRatings:N'
-)
+    st.altair_chart(ratings_bar_chart_meta, use_container_width=True)
 
-st.altair_chart(ratings_bar_chart_meta, use_container_width=True)
-
-st.markdown("Former employees of Meta have said:")
-st.write("1. Pros: Good perks and comp, coworkers are nice and fun. Cons: Very competitive environment. No possible to succeed if you don’t work 60+ hours. Focus on short term impact due to performance cycle every 6 months. No clarity on expectations of roles. Mix signals from leadership about culture.")
-st.write("2. Pros: Great opportunity to work with the smartest people from the world - most products have billions of users so your work have a big scope - beautiful campus, good snacks, foods, and benefits. Cons: If you are a data scientist, you need to really care about two things: - Impact. Unlike SWE, who can prove their impacts by finishing pre-planned coding projects and rolling out pre-planned features, data scientist does not automatically get credit if you only finish beautiful analyses. You have to suggest eng team to apply your suggestion from analysis, and prove how much of the product growth are from your analysis. So sometimes your impact can be subjective. - Skillset. You may be asked to do a lot of ad-hoc analyses from eng team, which I am sure are very important and can guide engineers whether to implement certain features, but that will prevent you from doing some deep dive analyses and learning some new techniques in data analysis. Maybe after a year or two, you will find that you did not build any statistical models or haven't touched any machine learning. But that's the skillset what other companies will ask for when you apply new job. Who cares you did how many ad-hoc analyses or AB test or wrote how many data pipelines. It's the fancy machine learning model that will earn you respect. Also, total pay is lower than SWE for the same level.")
-st.write("3. Pros: Food - Health care benefits - Fringe benefits - Nice campus - Corporate shuttles - State of the art tech stack - Extremely smart coworkers - Visionary and bold top management. Cons: Work/life balance can get hurt as a lot of folks at the office are single and do not understand the needs of having a family. The company is getting bigger. This means more room for backroom politics and aligning people without ruffling people's feathers. Very talented individual contributors (and/or good at politics) are being promoted. As a result, instead of having well rounded managers, you end up having either extremely career driven or super awkward managers. Some of those middle managers are very green, making it even more painful. Some women feel like they have to be extra tough at work because of the Leanin coolaid, making them very hard to work with.")
+    st.markdown("Former employees of Meta have said:")
+    st.write("1. Pros: Good perks and comp, coworkers are nice and fun. Cons: Very competitive environment. No possible to succeed if you don’t work 60+ hours. Focus on short term impact due to performance cycle every 6 months. No clarity on expectations of roles. Mix signals from leadership about culture.")
+    st.write("2. Pros: Great opportunity to work with the smartest people from the world - most products have billions of users so your work have a big scope - beautiful campus, good snacks, foods, and benefits. Cons: If you are a data scientist, you need to really care about two things: - Impact. Unlike SWE, who can prove their impacts by finishing pre-planned coding projects and rolling out pre-planned features, data scientist does not automatically get credit if you only finish beautiful analyses. You have to suggest eng team to apply your suggestion from analysis, and prove how much of the product growth are from your analysis. So sometimes your impact can be subjective. - Skillset. You may be asked to do a lot of ad-hoc analyses from eng team, which I am sure are very important and can guide engineers whether to implement certain features, but that will prevent you from doing some deep dive analyses and learning some new techniques in data analysis. Maybe after a year or two, you will find that you did not build any statistical models or haven't touched any machine learning. But that's the skillset what other companies will ask for when you apply new job. Who cares you did how many ad-hoc analyses or AB test or wrote how many data pipelines. It's the fancy machine learning model that will earn you respect. Also, total pay is lower than SWE for the same level.")
+    st.write("3. Pros: Food - Health care benefits - Fringe benefits - Nice campus - Corporate shuttles - State of the art tech stack - Extremely smart coworkers - Visionary and bold top management. Cons: Work/life balance can get hurt as a lot of folks at the office are single and do not understand the needs of having a family. The company is getting bigger. This means more room for backroom politics and aligning people without ruffling people's feathers. Very talented individual contributors (and/or good at politics) are being promoted. As a result, instead of having well rounded managers, you end up having either extremely career driven or super awkward managers. Some of those middle managers are very green, making it even more painful. Some women feel like they have to be extra tough at work because of the Leanin coolaid, making them very hard to work with.")
     
 
 if company == 'Microsoft':
