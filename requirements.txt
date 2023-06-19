@@ -3,4 +3,11 @@ pandas
 numpy
 matplotlib
 pillow
-streamlit_gallery
+streamlit-ace
+streamlit-discourse
+streamlit-elements
+streamlit-pandas-profiling
+streamlit-player
+streamlit-quill
+pandas-profiling
+requests
