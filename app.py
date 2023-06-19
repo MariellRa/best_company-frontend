@@ -183,22 +183,21 @@ if company == 'Apple':
     
     st.pyplot(fig)
 
-    st.write('How former Employees have rated Apple?')
-  
-    ratings_data_apple = pd.DataFrame({
-        "Ratings": ["5","4","3","2","1"],
-        "RatingsbyAppleEmployees": [052.8,029.1,012.2,002.0,003.9]  
-    })
+    with st.expander("How former Employees have rated Apple?"):
+        ratings_data_apple = pd.DataFrame({
+            "Ratings": ["5","4","3","2","1"],
+            "RatingsbyAppleEmployees": [052.8,029.1,012.2,002.0,003.9]  
+        })
 
-    ratings_data_apple['Ratings'] = ratings_data_apple['Ratings'].astype(int)
+        ratings_data_apple['Ratings'] = ratings_data_apple['Ratings'].astype(int)
 
-    ratings_data_apple = ratings_data_apple.sort_values('Ratings', ascending=False)
+        ratings_data_apple = ratings_data_apple.sort_values('Ratings', ascending=False)
 
-    ratings_bar_chart_apple = alt.Chart(ratings_data_apple).mark_bar().encode(
-        x='sum(RatingsbyAppleEmployees)',
-        y=alt.Y('Ratings:N', sort='-x'), 
-        color='Ratings:N'
-    )
+        ratings_bar_chart_apple = alt.Chart(ratings_data_apple).mark_bar().encode(
+            x='sum(RatingsbyAppleEmployees)',
+            y=alt.Y('Ratings:N', sort='-x'), 
+            color='Ratings:N'
+        )
 
     st.altair_chart(ratings_bar_chart_apple, use_container_width=True)
 
