@@ -7,8 +7,6 @@ import math
 import matplotlib.pyplot as plt
 from PIL import Image
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
-from streamlit_gallery import apps, components
-from streamlit_gallery.utils.page import page_group
 
 keyword1 = 'Career Growth'
 keyword2 = 'Work Environment'
@@ -21,34 +19,18 @@ keyword8 = 'Team work'
 keyword9 = 'Learning & Development'
 keyword10 = 'Role scope'
 
-
-def main():
-    page = page_group("p")
-
-    with st.sidebar:
-        st.title("Menu")
-
-        with st.expander("✨ APPS", True):
-            page.item("Best Company", apps.gallery, default=True)
-
-    page.show()
-
-if __name__ == "__main__":
-    st.set_page_config(page_title="Find DS Company", page_icon="🎈", layout="wide")
-    main()
-
 '''
 # Welcome to app :blue[Find DS Company]!
 
 Welcome to our app, where we assist you in finding your ideal company as a data scientist. 
 
 '''
-st.sidebar.markdown("**Rate the Importance of 10 Keywords**")
+st.markdown("**Rate the Importance of 10 Keywords**")
 
-st.sidebar.write("To begin the process, we kindly ask you to rate ten keywords to reflect your preferences.") 
-st.sidebar.write("These keywords will help our algorithm identify the best matching companies for you based on your specified criteria.") 
+st.write("To begin the process, we kindly ask you to rate ten keywords to reflect your preferences.") 
+st.write("These keywords will help our algorithm identify the best matching companies for you based on your specified criteria.") 
 
-st.sidebar.write("Please assign each a value from 0 to 10. The higher the value, the more important the keyword is to you.")
+st.write("Please assign each a value from 0 to 10. The higher the value, the more important the keyword is to you.")
 
 # Variable 1 Slider
 variable1 = st.sidebar.slider(f'Set {keyword1}: 0-10', 0, 10, 0)
