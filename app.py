@@ -221,10 +221,7 @@ if company == 'Apple':
         st.write("- Conduct AB Testing")
         st.write("- KNN Nearest Neighbor")
 
-     with st.expander("Insights into the Interview Process and Job Offer Rates")
-         st.write("- 34.15% of candidates describe the interview process as difficult for Apple")
-         st.write("- 56.1% of candidates describe the interview process as average for Apple")
-         st.write("- Only 24.39% of candidates receive job offers for Apple")
+  
     
 if company == 'Meta':
     st.write('Meta Platforms, Inc., formerly named Facebook, Inc., and TheFacebook, Inc., is an American multinational technology conglomerate based in Menlo Park, California. The company owns Facebook, Instagram, and WhatsApp, among other products and services.')
