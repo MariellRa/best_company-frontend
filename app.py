@@ -90,7 +90,7 @@ with st.expander("How this works?"):
 
 ## :trophy: RESULTS :trophy: 
 
-##### Please find the overview of your ideal company as a data scientist as follows:
+##### The Excellent Company for You: A Comprehensive Overview:
 '''
 st.write('Your ideal company is:')
 st.write(list(response.json()['sorted_company'])[-1])
