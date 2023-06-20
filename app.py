@@ -127,7 +127,7 @@ work_life_intro = f'{company_name} is know for good {keyword1}'
 if company == 'Apple':
     st.write('Apple Inc. is an American multinational technology company headquartered in Cupertino, California. Apple is the world largest technology company by revenue, and the second-largest mobile phone manufacturer in the world.')
 
-    with st.expander("Comprehensive Analysis of Apple Results"):
+    with st.expander("Comprehensive Analysis of Results"):
         for i in range(2):
             if list(variable_dict)[i] == keyword1:
                 X = f'{company_name} is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
