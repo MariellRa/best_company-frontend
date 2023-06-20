@@ -215,6 +215,7 @@ if company == 'Apple':
         st.write("- How to Approach Problems")
         st.write("- Tell Current Responsibilities")
         st.write("- Projects on Resume")
+      
         st.write("Technical Questions:")
         st.write("- SQL Basic Questions")
         st.write("- Metrics Used to Evaluate a Model")
@@ -311,7 +312,23 @@ if company == 'Meta':
         st.write("1. **Pros**: Good perks and comp, coworkers are nice and fun. **Cons**: Very competitive environment. No possible to succeed if you don’t work 60+ hours. Focus on short term impact due to performance cycle every 6 months. No clarity on expectations of roles. Mix signals from leadership about culture.")
         st.write("2. **Pros**: Great opportunity to work with the smartest people from the world - most products have billions of users so your work have a big scope - beautiful campus, good snacks, foods, and benefits. **Cons**: If you are a data scientist, you need to really care about two things: - Impact. Unlike SWE, who can prove their impacts by finishing pre-planned coding projects and rolling out pre-planned features, data scientist does not automatically get credit if you only finish beautiful analyses. You have to suggest eng team to apply your suggestion from analysis, and prove how much of the product growth are from your analysis. So sometimes your impact can be subjective. - Skillset. You may be asked to do a lot of ad-hoc analyses from eng team, which I am sure are very important and can guide engineers whether to implement certain features, but that will prevent you from doing some deep dive analyses and learning some new techniques in data analysis. Maybe after a year or two, you will find that you did not build any statistical models or haven't touched any machine learning. But that's the skillset what other companies will ask for when you apply new job. Who cares you did how many ad-hoc analyses or AB test or wrote how many data pipelines. It's the fancy machine learning model that will earn you respect. Also, total pay is lower than SWE for the same level.")
         st.write("3. **Pros**: Food - Health care benefits - Fringe benefits - Nice campus - Corporate shuttles - State of the art tech stack - Extremely smart coworkers - Visionary and bold top management. **Cons**: Work/life balance can get hurt as a lot of folks at the office are single and do not understand the needs of having a family. The company is getting bigger. This means more room for backroom politics and aligning people without ruffling people's feathers. Very talented individual contributors (and/or good at politics) are being promoted. As a result, instead of having well rounded managers, you end up having either extremely career driven or super awkward managers. Some of those middle managers are very green, making it even more painful. Some women feel like they have to be extra tough at work because of the Leanin coolaid, making them very hard to work with.")
-    
+
+    with st.expander("Top Interview Questions Frequently Asked at Meta"):
+        st.write("General Questions:")
+        st.write("- Tell Technical Background")
+        st.write("- How Would You Measure Success of a Product")
+        st.write("- Tell About a Time When...")
+        st.write("- Previous Experience")
+      
+        st.write("Technical Questions:")
+        st.write("- SQL")
+        st.write("- Questions on AB Testing")
+        st.write("- Machine Learning")
+
+    with st.expander("Insights into the Interview Process and Job Offer Rates"):
+        st.write("- 26% of candidates describe the interview process as difficult for Meta")
+        st.write("- 70% of candidates describe the interview process as average for Meta")
+        st.write("- Only 21.33% of candidates receive job offers for Meta")
 
 if company == 'Microsoft':
     st.write('Microsoft Corporation is an American multinational technology corporation headquartered in Redmond, Washington. Microsofts best-known software products are the Windows line of operating systems, the Microsoft Office suite, and the Internet Explorer and Edge web browsers.')
@@ -398,7 +415,24 @@ if company == 'Microsoft':
         st.write("2. **Pros**: Decent pay, good benefits, great co-workers. **Cons**: Satya does regular layoffs, while talking a big game about caring for employees. This fiscal year, Microsoft acquired companies worth a $100B, invested $10B+ in OpenAI, but laid off 5% of the workforce to save $1-2B over the next few years.")
         st.write("3. **Pros**: Working with truly big datasets and ability to use advanced techniques Cutting edge database/stats tools Relaxed environment with no deadlines and pressure. **Cons**: slow-paced, no clear objectives and not goal-oriented - may feel more like a uni environment than a real work multiple teams doing the same tasks - which leads to internal competition and politics rather than focusing on external clients too many layers of management most project don't lead to any noticeable impact and don't align with company strategy - the emphasis is on *PR* aspect to make the manager/team look good (you spend far more time on presenting/ improving the power point slides than actual analysis or work).")
     
+    with st.expander("Top Interview Questions Frequently Asked at Microsoft"):
+        st.write("General Questions:")
+        st.write("- Discuss Experience in Data Science")
+        st.write("- Tell About a Time When...")
+        st.write("- Difficulties Faced")
+        st.write("- Prior Experience")
+      
+        st.write("Technical Questions:")
+        st.write("- Underfitting and Overfitting")
+        st.write("- Recommendation System Design")
+        st.write("- Probability Statistics")
+        st.write("- Machine Learning")
 
+    with st.expander("Insights into the Interview Process and Job Offer Rates"):
+        st.write("- 25.88% of candidates describe the interview process as difficult for Microsoft")
+        st.write("- 57.06% of candidates describe the interview process as average for Microsoft")
+        st.write("- Only 35.29% of candidates receive job offers for Microsoft")
+    
 if company == 'Amazon':
     st.write('Amazon.com, Inc. is an American multinational technology company focusing on e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence.')
 
@@ -483,7 +517,24 @@ if company == 'Amazon':
         st.write("1. **Pros**: I hear this is certainly not true for every team, but I think my team is great and I’m very happy at Amazon. - My work life balance is great. I hardly ever have to work more than 40 hours/week. The few times that I do, I don’t particularly mind since I rarely have to. - My team and manager are really chill. Nobody cares when I get to the office, when I leave, or exactly how many hours I was there. I’m certainly expected to get my work done, but I feel like I have a lot of freedom to work on my projects however I’d like. I also work from home about once a week. - This is especially true for Amazon Web Services (where I work) but I feel fortunate that I can learn how to use all the services on AWS for free. My field uses AWS pretty extensively, but it’s normally pretty expensive if you want to use it a lot. We get it all for free and we use it a lot in our everyday work, so I feel pretty lucky to be able to learn it. **Cons**: Compared to other tech companies Amazon is undoubtedly very cheap. We have to pay for all of our own food, the food is expensive, and it’s also mediocre. Parking isn’t even free. Our benefits are okay but not as good as other tech companies. Our office space looks fine but pretty minimalist. I find this to be minor in the grand scheme of things but it’s definitely noticeable. I dislike being on-call. I’m on call for a week at a time about once every two months. During that time you’re handed a pager and you have to be available 24/7 for issues. This could potentially be on a random weekend afternoon, 8 am in the morning, or worst of all, the dreaded 3 am pager ringing. Fortunately I’m not on-call all that often so I just suck it up and deal with it whenever it rolls around.")
         st.write("2. **Pros**: I worked for AWS Professional Services, the consulting arm of Amazon Web Services. * AWS invests a LOT in your education. 6 weeks of just onboarding, including AWS paying for certification training classes and certification exames * Access to internal AWS accounts makes it easy to experiment and learn * My coworkers were brilliant, and I learned a lot from them * Access to unique customer challenges and datasets * Pay was great, 30% higher than what I was making in my previous job * For a while, some of the travel is great. I got to visit a few cities around the U.S. and even travel internationally * Work-life balanced is manageable. Could be a lot better if there weren't so many time-sucking unnecessary internal processes, but it's not nearly as bad as Amazon's reputation if you google *Amazon work-life balance*. **Cons**: Amazon is enormous, and as bureaucratic as you'd guess based on that size. I probably bookmarked 200 well-meaning internal sites / tools my first week. Gender diversity was awful on my team. I think it was something like 80 employees, 3 women. Travel in AWS Professional Services is a lot more manageable than at management consultancies, but it can still wear you down. I'd say on average I got about 10 days notice before traveling * Internal communication tools are awful. You have to use Amazon-created, kind-of-ok alternatives to the stack you'd use at a modern company. e.g. Amazon Chime instead of Slack, Microsoft Outlook instead of Google Calendar, etc.")
         st.write("3. **Pros**: Flexible working hours work from home there are many smart people around you who are more than willing to share their knowledge. **Cons**: work-life balance not so good highly political flying economy on inter-continental flights no matter your level very rigid HR compensation could be better no perks such as a car on leasing no food provided on campus no tech courses (such as Machine Learning University) in Europe.")
-    
+
+    with st.expander("Top Interview Questions Frequently Asked at Amazon"):
+        st.write("General Questions:")
+        st.write("- Tell About a Time When...")
+        st.write("- Explain One Project on Resume")
+        st.write("- Behavioral Questions")
+        st.write("- Tell About a Time When You Failed")
+      
+        st.write("Technical Questions:")
+        st.write("- Difference Between Bagging and Boosting")
+        st.write("- SQL")
+        st.write("- Machine Learning Questions")
+        st.write("- Visualize Multidimensional Data")
+
+    with st.expander("Insights into the Interview Process and Job Offer Rates"):
+        st.write("- 18.12% of candidates describe the interview process as difficult for Amazon")
+        st.write("- 70.62% of candidates describe the interview process as average for Amazon")
+        st.write("- Only 21.88% of candidates receive job offers for Amazon")
 
 if company == 'Google':
     st.write('Google LLC is an American multinational technology company focusing on artificial intelligence, online advertising, search engine technology, cloud computing, computer software, quantum computing, e-commerce, and consumer electronics.')
@@ -570,5 +621,21 @@ if company == 'Google':
         st.write("2. **Pros**: The money’s great! The free gourmet food and snacks are never-ending Working at Google, you're exposed to amazing people and great thinkers Googlers feel like they are really living in the future Dogs are welcome! **Cons**: Learning is self-driven The competition is brutal Supervision is minimal.")
         st.write("3. **Pros**: Great job security Clear path to promotion Smart colleagues Excellent career development resources Diverse workplace Creative freedom and autonomy Effective feedback processes. **Cons**: Can be quite political Multiple teams working on the same project Some loud and disrespectful employees Sexual and racial harassment/discrimination happens more often than it should given their external messaging/image they project Not true to their stated ethics.")
 
+    with st.expander("Top Interview Questions Frequently Asked at Google"):
+        st.write("General Questions:")
+        st.write("- Prior Projects Worked")
+        st.write("- Responsibilities")
+        st.write("- Questions on Setting Priorities and Multitasking")
+        st.write("- Describe Previous Experience")
+      
+        st.write("Technical Questions:")
+        st.write("- Machine Learning and Statstics Questions")
+        st.write("- Standard Mean Error")
+        st.write("- SQL and Window Functions")
+        st.write("- Describe How Principal Component Analysis Works")
 
+    with st.expander("Insights into the Interview Process and Job Offer Rates"):
+        st.write("- 33.64% of candidates describe the interview process as difficult for Google")
+        st.write("- 60% of candidates describe the interview process as average for Google")
+        st.write("- Only 13.64% of candidates receive job offers for Google")
 
