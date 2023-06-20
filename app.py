@@ -209,8 +209,22 @@ if company == 'Apple':
         st.write("2. **Pros**: Salary, Food and Free shuttle bus from MRT-station. **Cons**: Too much micro-management Always monitored by management. Can barely go to toilet without getting message from boss about being inactive. Too high expectations from Management to hit KPI - they care more about quantity than quality. No team morale. Management don't even introduce you to your colleagues when you start. No communication with management except for when you do something *wrong* like taking too long to get your coffee.")
         st.write("3. **Pros**: At the beginning you can learn a lot and see how a big company works. Depending on teams, data scientists have a lot of freedom. **Cons**: Unstructured. Infra structure is not as great as some other big companies. Growth is slow which is natural for big companies.")
     
+    with st.expander("Top Interview Questions Frequently Asked at Apple"):
+        st.write("General Questions:")
+        st.write("- Internship Experiences")
+        st.write("- How to Approach Problems")
+        st.write("- Tell Current Responsibilities")
+        st.write("- Projects on Resume")
+        st.write("Technical Questions:")
+        st.write("- SQL Basic Questions")
+        st.write("- Metrics Used to Evaluate a Model")
+        st.write("- Conduct AB Testing")
+        st.write("- KNN Nearest Neighbor")
 
-  
+     with st.expander("Insights into the Interview Process and Job Offer Rates"):
+         st.write("- 34.15% of candidates describe the interview process as difficult for Apple")
+         st.write("- 56.1% of candidates describe the interview process as average for Apple")
+         st.write("- Only 24.39% of candidates receive job offers for Apple")
     
 if company == 'Meta':
     st.write('Meta Platforms, Inc., formerly named Facebook, Inc., and TheFacebook, Inc., is an American multinational technology conglomerate based in Menlo Park, California. The company owns Facebook, Instagram, and WhatsApp, among other products and services.')
