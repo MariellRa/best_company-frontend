@@ -181,7 +181,7 @@ else:
             st.write(" ")
             st.write("-", Y)
     
-        with st.expander("Word cloud: How former employees see Apple"):
+        with st.expander("Word cloud: What employees say about Apple?"):
     
             apple_cloud_data = 'place work, smart people, environment people, work life, company work, big company, work smart, lot perk, well manage, pay phone, team work, work environment, life balance, people work, company culture, work apple, salary benefit, work culture, worklife balance, get work, work lot, excite work, really enjoy, culture people, fast pace, benefit pay, environment work, interest project, talented people, perk benefit, growth opportunities, lot opportunities, experience work, learn lot, opportunities grow, nice place, work people, depend team, interest work, want work, work benefit, work big, nice work, love work, work products, products impact, impact world, health insurance'
         
@@ -195,7 +195,7 @@ else:
         
             st.pyplot(fig)
     
-        with st.expander("How former Employees have rated Apple?"):
+        with st.expander("How former employees have rated Apple?"):
             ratings_data_apple = pd.DataFrame({
                 "Ratings": ["5","4","3","2","1"],
                 "RatingsbyAppleEmployees": [052.8,029.1,012.2,002.0,003.9]  
@@ -226,20 +226,20 @@ else:
             st.write("- :green[**Pros**]: At the beginning you can learn a lot and see how a big company works. Depending on teams, data scientists have a lot of freedom.") 
             st.write("- :red[**Cons**]: Unstructured. Infra structure is not as great as some other big companies. Growth is slow which is natural for big companies.")
         
-        with st.expander("Top Interview Questions Frequently Asked at Apple"):
-            st.write("General Questions:")
-            st.write("- Internship Experiences")
-            st.write("- How to Approach Problems")
-            st.write("- Tell Current Responsibilities")
-            st.write("- Projects on Resume")
+        with st.expander("Top interview questions frequently asked at Apple"):
+            st.write("General questions:")
+            st.write("- Internship experiences")
+            st.write("- How to approach problems")
+            st.write("- Tell current responsibilities")
+            st.write("- Projects on resume")
             st.write(" ")
-            st.write("Technical Questions:")
-            st.write("- SQL Basic Questions")
-            st.write("- Metrics Used to Evaluate a Model")
-            st.write("- Conduct AB Testing")
-            st.write("- KNN Nearest Neighbor")
+            st.write("Technical questions:")
+            st.write("- SQL basic questions")
+            st.write("- Metrics used to evaluate a model")
+            st.write("- Conduct AB testing")
+            st.write("- KNN nearest neighbor")
     
-        with st.expander("Insights into the Interview Process and Job Offer Rates"):
+        with st.expander("Insights into the interview process and job offer rates"):
             st.write("- 34% of candidates describe the interview process as difficult for Apple")
             st.write("- 56% of candidates describe the interview process as average for Apple")
             st.write("- 24% of candidates receive job offers for Apple")
@@ -295,7 +295,7 @@ else:
             st.write(" ")
             st.write("-", Y)
     
-        with st.expander("Word cloud: How former employees see Meta"):
+        with st.expander("Word cloud: What employees say about Meta?"):
         
             meta_cloud_data = 'smart people, interest problems, work environment, learn lot, worklife balance, pay benefit, move fast, place work, people work, career growth, take care, work life, open culture, company culture, nice people, people nice, fast pace, people benefit, really smart, talented coworkers, pay smart, challenge work, smart colleagues, nice smart, challenge problems, culture people, life balance, free food, wellness benefit, benefit nice, love work, work smart, benefit pay, every day, benefit smart, learn new'
     
@@ -309,7 +309,7 @@ else:
         
             st.pyplot(fig)
     
-        with st.expander("How former Employees have rated Meta?"):
+        with st.expander("How former employees have rated Meta?"):
       
             ratings_data_meta = pd.DataFrame({
                 "Ratings": ["5","4","3","2","1"],
@@ -340,20 +340,20 @@ else:
             st.write("- :green[**Pros**]: Food - Health care benefits - Fringe benefits - Nice campus - Corporate shuttles - State of the art tech stack - Extremely smart coworkers - Visionary and bold top management.") 
             st.write("- :red[**Cons**]: Work/life balance can get hurt as a lot of folks at the office are single and do not understand the needs of having a family. The company is getting bigger. This means more room for backroom politics and aligning people without ruffling people's feathers. Very talented individual contributors (and/or good at politics) are being promoted. As a result, instead of having well rounded managers, you end up having either extremely career driven or super awkward managers. Some of those middle managers are very green, making it even more painful. Some women feel like they have to be extra tough at work because of the Leanin coolaid, making them very hard to work with.")
     
-        with st.expander("Top Interview Questions Frequently Asked at Meta"):
-            st.write("General Questions:")
-            st.write("- Tell Technical Background")
-            st.write("- How Would You Measure Success of a Product")
-            st.write("- Tell About a Time When...")
-            st.write("- Previous Experience")
+        with st.expander("Top interview questions frequently asked at Meta"):
+            st.write("General questions:")
+            st.write("- Tell technical background")
+            st.write("- How would you measure success of a product")
+            st.write("- Tell about a time when...")
+            st.write("- Previous experience")
             st.write(" ")
-            st.write("Technical Questions:")
+            st.write("Technical questions:")
             st.write("- SQL")
-            st.write("- Questions on Case Studies, e.g. Determine Spam Friend Requests")
-            st.write("- Questions on AB Testing")
-            st.write("- Machine Learning")
+            st.write("- Questions on case studies, e.g. Determine spam friend requests")
+            st.write("- Questions on AB testing")
+            st.write("- Machine learning")
     
-        with st.expander("Insights into the Interview Process and Job Offer Rates"):
+        with st.expander("Insights into the interview process and job offer rates"):
             st.write("- 26% of candidates describe the interview process as difficult for Meta")
             st.write("- 70% of candidates describe the interview process as average for Meta")
             st.write("- 21% of candidates receive job offers for Meta")
@@ -408,7 +408,7 @@ else:
             st.write(" ")
             st.write("-", Y)
     
-        with st.expander("Word cloud: How former employees see Microsoft"):
+        with st.expander("Word cloud: What employees say about Microsoft?"):
     
             microsoft_cloud_data = 'work life, life balance, worklife balance, work culture, work environment, smart people, company culture, people work, place work, talented people, diversity inclusion, company work, interest work, nice work, flexible work, growth mindset, opportunity work, work project, culture work, team members, benefit work, interest problems, company lot, work atmosphere, balance work, work hours, people around, work talented, culture people, lot opportunities, balance lot, stable company, balance smart'
     
@@ -422,7 +422,7 @@ else:
         
             st.pyplot(fig)
     
-        with st.expander("How former Employees have rated Microsoft?"):
+        with st.expander("How former employees have rated Microsoft?"):
       
             ratings_data_microsoft = pd.DataFrame({
                 "Ratings": ["5","4","3","2","1"],
@@ -453,20 +453,20 @@ else:
             st.write("- :green[**Pros**]: Working with truly big datasets and ability to use advanced techniques Cutting edge database/stats tools Relaxed environment with no deadlines and pressure.") 
             st.write("- :red[**Cons**]: slow-paced, no clear objectives and not goal-oriented - may feel more like a uni environment than a real work multiple teams doing the same tasks - which leads to internal competition and politics rather than focusing on external clients too many layers of management most project don't lead to any noticeable impact and don't align with company strategy - the emphasis is on *PR* aspect to make the manager/team look good (you spend far more time on presenting/ improving the power point slides than actual analysis or work).")
         
-        with st.expander("Top Interview Questions Frequently Asked at Microsoft"):
-            st.write("General Questions:")
-            st.write("- Discuss Experience in Data Science")
-            st.write("- Tell About a Time When...")
-            st.write("- Difficulties Faced")
-            st.write("- Prior Experience")
+        with st.expander("Top interview questions frequently asked at Microsoft"):
+            st.write("General questions:")
+            st.write("- Discuss experience in data science")
+            st.write("- Tell about a time when...")
+            st.write("- Difficulties faced")
+            st.write("- Prior experience")
             st.write(" ")
-            st.write("Technical Questions:")
-            st.write("- Underfitting and Overfitting")
-            st.write("- Recommendation System Design")
-            st.write("- Probability Statistics")
-            st.write("- Machine Learning")
+            st.write("Technical questions:")
+            st.write("- Underfitting and overfitting")
+            st.write("- Recommendation system design")
+            st.write("- Probability statistics")
+            st.write("- Machine learning")
     
-        with st.expander("Insights into the Interview Process and Job Offer Rates"):
+        with st.expander("Insights into the interview process and job offer rates"):
             st.write("- 26% of candidates describe the interview process as difficult for Microsoft")
             st.write("- 57% of candidates describe the interview process as average for Microsoft")
             st.write("- 35% of candidates receive job offers for Microsoft")
@@ -521,7 +521,7 @@ else:
             st.write(" ")
             st.write("-", Y)
     
-        with st.expander("Word cloud: How former employees see Amazon"):
+        with st.expander("Word cloud: What employees say about Amazon?"):
       
             amazon_cloud_data = 'smart people, place work, lot learn, work life, life balance, interest problems, people work, work environment, work culture, learn lot, worklife balance, work amazon, company culture, best place, career growth, new things, interest work, learn new, opportunities learn, company work, work experience, challenge problems, compensation package, flexible work, get work, leadership principles, learn curve, many opportunities, career development, work home, work hours, growth opportunities, talented people, challenge work, opportunity learn, nice work, high salary, learn work, interest project, nice people, grow fast, place learn, love work, opportunity work, work high, people around, new ideas, work potential, try new, work project, machine learn, things learn, team work'
     
@@ -535,7 +535,7 @@ else:
         
             st.pyplot(fig)
     
-        with st.expander("How former Employees have rated Amazon?"):
+        with st.expander("How former employees have rated Amazon?"):
       
             ratings_data_amazon = pd.DataFrame({
                 "Ratings": ["5","4","3","2","1"],
@@ -566,20 +566,20 @@ else:
             st.write("- :green[**Pros**]: Flexible working hours work from home there are many smart people around you who are more than willing to share their knowledge.") 
             st.write("- :red[**Cons**]: work-life balance not so good highly political flying economy on inter-continental flights no matter your level very rigid HR compensation could be better no perks such as a car on leasing no food provided on campus no tech courses (such as Machine Learning University) in Europe.")
     
-        with st.expander("Top Interview Questions Frequently Asked at Amazon"):
-            st.write("General Questions:")
-            st.write("- Tell About a Time When...")
-            st.write("- Explain One Project on Resume")
-            st.write("- Behavioral Questions")
-            st.write("- Tell About a Time When You Failed")
+        with st.expander("Top interview questions frequently asked at Amazon"):
+            st.write("General questions:")
+            st.write("- Tell about a time when...")
+            st.write("- Explain one project on resume")
+            st.write("- Behavioral questions")
+            st.write("- Tell about a time when you failed")
             st.write(" ")
-            st.write("Technical Questions:")
-            st.write("- Difference Between Bagging and Boosting")
+            st.write("Technical questions:")
+            st.write("- Difference between bagging and boosting")
             st.write("- SQL")
-            st.write("- Machine Learning Questions")
-            st.write("- Visualize Multidimensional Data")
+            st.write("- Machine learning questions")
+            st.write("- Visualize multidimensional data")
     
-        with st.expander("Insights into the Interview Process and Job Offer Rates"):
+        with st.expander("Insights into the interview process and job offer rates"):
             st.write("- 18% of candidates describe the interview process as difficult for Amazon")
             st.write("- 71% of candidates describe the interview process as average for Amazon")
             st.write("- 22% of candidates receive job offers for Amazon")
@@ -634,7 +634,7 @@ else:
             st.write(" ")
             st.write("-", Y)
     
-        with st.expander("Word cloud: How former employees see Google"):
+        with st.expander("Word cloud: What employees say about Google?"):
       
             google_cloud_data = 'smart people, work life, life balance, best company, free food, work environment, place work, worklife balance, work culture, work google, nice people, learn lot, people work, company work, every day, benefit work, nice work'
     
@@ -648,7 +648,7 @@ else:
         
             st.pyplot(fig)
     
-        with st.expander("How former Employees have rated Google?"):
+        with st.expander("How former employees have rated Google?"):
       
             ratings_data_google = pd.DataFrame({
                 "Ratings": ["5","4","3","2","1"],
@@ -679,20 +679,20 @@ else:
             st.write("- :green[**Pros**]: Great job security Clear path to promotion Smart colleagues Excellent career development resources Diverse workplace Creative freedom and autonomy Effective feedback processes.") 
             st.write("- :red[**Cons**]: Can be quite political Multiple teams working on the same project Some loud and disrespectful employees Sexual and racial harassment/discrimination happens more often than it should given their external messaging/image they project Not true to their stated ethics.")
     
-        with st.expander("Top Interview Questions Frequently Asked at Google"):
-            st.write("General Questions:")
-            st.write("- Prior Projects Worked")
+        with st.expander("Top interview questions frequently asked at Google"):
+            st.write("General questions:")
+            st.write("- Prior projects worked")
             st.write("- Responsibilities")
-            st.write("- Questions on Setting Priorities and Multitasking")
-            st.write("- Describe Previous Experience")
+            st.write("- Questions on setting priorities and multitasking")
+            st.write("- Describe previous experience")
             st.write(" ")
-            st.write("Technical Questions:")
-            st.write("- Machine Learning and Statstics Questions")
-            st.write("- Standard Mean Error")
-            st.write("- SQL and Window Functions")
-            st.write("- Describe How Principal Component Analysis Works")
+            st.write("Technical questions:")
+            st.write("- Machine learning and statstics questions")
+            st.write("- Standard mean error")
+            st.write("- SQL and window functions")
+            st.write("- Describe how principal component analysis works")
     
-        with st.expander("Insights into the Interview Process and Job Offer Rates"):
+        with st.expander("Insights into the interview process and job offer rates"):
             st.write("- 34% of candidates describe the interview process as difficult for Google")
             st.write("- 60% of candidates describe the interview process as average for Google")
             st.write("- 14% of candidates receive job offers for Google")
