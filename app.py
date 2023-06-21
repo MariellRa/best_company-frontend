@@ -88,7 +88,7 @@ if response.status_code != 200:
 ## :trophy: RESULTS :trophy: 
 '''
 st.write('Your closest match:')
-st.write(list(response.json()[***'sorted_company'***])[-1])
+st.write(list(response.json()['sorted_company'])[-1])
 
 # Company Dashboard
 company = list(response.json()['sorted_company'])[-1]
