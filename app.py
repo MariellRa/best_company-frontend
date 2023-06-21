@@ -167,9 +167,9 @@ if company == 'Apple':
                 Y = f'In addition to this {company_name} excels in providing exceptional learning and development opportunities for their employees. They understand the significance of continuous growth and offer a range of training programs, workshops, and resources to enhance professional skills. By prioritizing learning and development, they empower individuals to reach their full potential and succeed in their careers, complementing their competitive compensation structure.'
             if list(sorted_variable_dict)[i][0] == keyword10:
                 Y = f'In addition to this, {company_name} distinguishes itself through its attention to role scope, ensuring that employees have well-defined responsibilities and opportunities for growth. They prioritize providing clear job descriptions, outlining the expectations and parameters of each role within the organization. By offering clarity in role scope, employees can understand their contributions, excel in their positions, and receive the compensation that aligns with their responsibilities.'
-        st.write(- X)
+        st.write("- X")
         st.write(" ")
-        st.write(- Y)
+        st.write("- Y")
 
     with st.expander("Word cloud: How former employees see Apple"):
 
