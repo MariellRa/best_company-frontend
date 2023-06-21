@@ -219,9 +219,9 @@ if company == 'Apple':
         st.write("- KNN Nearest Neighbor")
 
     with st.expander("Insights into the Interview Process and Job Offer Rates"):
-        st.write("- 34.15% of candidates describe the interview process as difficult for Apple")
-        st.write("- 56.1% of candidates describe the interview process as average for Apple")
-        st.write("- Only 24.39% of candidates receive job offers for Apple")
+        st.write("- 34% of candidates describe the interview process as difficult for Apple")
+        st.write("- 56% of candidates describe the interview process as average for Apple")
+        st.write("- 24% of candidates receive job offers for Apple")
     
 if company == 'Meta':
     st.write('Meta Platforms, Inc., formerly named Facebook, Inc., and TheFacebook, Inc., is an American multinational technology conglomerate based in Menlo Park, California. The company owns Facebook, Instagram, and WhatsApp, among other products and services.')
@@ -325,7 +325,7 @@ if company == 'Meta':
     with st.expander("Insights into the Interview Process and Job Offer Rates"):
         st.write("- 26% of candidates describe the interview process as difficult for Meta")
         st.write("- 70% of candidates describe the interview process as average for Meta")
-        st.write("- Only 21.33% of candidates receive job offers for Meta")
+        st.write("- 21% of candidates receive job offers for Meta")
 
 if company == 'Microsoft':
     st.write('Microsoft Corporation is an American multinational technology corporation headquartered in Redmond, Washington. Microsofts best-known software products are the Windows line of operating systems, the Microsoft Office suite, and the Internet Explorer and Edge web browsers.')
@@ -426,9 +426,9 @@ if company == 'Microsoft':
         st.write("- Machine Learning")
 
     with st.expander("Insights into the Interview Process and Job Offer Rates"):
-        st.write("- 25.88% of candidates describe the interview process as difficult for Microsoft")
-        st.write("- 57.06% of candidates describe the interview process as average for Microsoft")
-        st.write("- Only 35.29% of candidates receive job offers for Microsoft")
+        st.write("- 26% of candidates describe the interview process as difficult for Microsoft")
+        st.write("- 57% of candidates describe the interview process as average for Microsoft")
+        st.write("- 35% of candidates receive job offers for Microsoft")
     
 if company == 'Amazon':
     st.write('Amazon.com, Inc. is an American multinational technology company focusing on e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence.')
@@ -529,9 +529,9 @@ if company == 'Amazon':
         st.write("- Visualize Multidimensional Data")
 
     with st.expander("Insights into the Interview Process and Job Offer Rates"):
-        st.write("- 18.12% of candidates describe the interview process as difficult for Amazon")
-        st.write("- 70.62% of candidates describe the interview process as average for Amazon")
-        st.write("- Only 21.88% of candidates receive job offers for Amazon")
+        st.write("- 18% of candidates describe the interview process as difficult for Amazon")
+        st.write("- 71% of candidates describe the interview process as average for Amazon")
+        st.write("- 22% of candidates receive job offers for Amazon")
 
 if company == 'Google':
     st.write('Google LLC is an American multinational technology company focusing on artificial intelligence, online advertising, search engine technology, cloud computing, computer software, quantum computing, e-commerce, and consumer electronics.')
@@ -632,7 +632,7 @@ if company == 'Google':
         st.write("- Describe How Principal Component Analysis Works")
 
     with st.expander("Insights into the Interview Process and Job Offer Rates"):
-        st.write("- 33.64% of candidates describe the interview process as difficult for Google")
+        st.write("- 34% of candidates describe the interview process as difficult for Google")
         st.write("- 60% of candidates describe the interview process as average for Google")
-        st.write("- Only 13.64% of candidates receive job offers for Google")
+        st.write("- 14% of candidates receive job offers for Google")
 
