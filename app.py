@@ -89,6 +89,9 @@ if sum(list(response.json()['sorted_company'].values())) == 0:
     st.write(':exclamation: No results yet! To begin the process, please rate ten keywords to reflect your preferences.')
 
 else:
+    
+    st.write(" ")
+    st.write(" ")
     '''
     
     ## :dart: Your closest match :dart:
