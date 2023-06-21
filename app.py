@@ -21,7 +21,7 @@ keyword9 = 'Learning & Development'
 keyword10 = 'Role scope'
 
 st.sidebar.markdown("**Apps**")
-st.sidebar.write("Find DS Company")
+st.sidebar.write("TechMatch")
 
 '''
 # Welcome to :blue[TechMatch]!
