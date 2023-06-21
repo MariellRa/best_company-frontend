@@ -91,7 +91,7 @@ if sum(list(response.json()['sorted_company'].values())) == 0:
 else:
     '''
     
-    ## :trophy: RESULTS :trophy: 
+    ## RESULTS
     '''
     st.write('Your closest match:')
     st.write(list(response.json()['sorted_company'])[-1])
