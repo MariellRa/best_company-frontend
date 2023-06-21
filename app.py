@@ -330,13 +330,13 @@ if company == 'Meta':
         st.write("- :red[**Cons**]: Work/life balance can get hurt as a lot of folks at the office are single and do not understand the needs of having a family. The company is getting bigger. This means more room for backroom politics and aligning people without ruffling people's feathers. Very talented individual contributors (and/or good at politics) are being promoted. As a result, instead of having well rounded managers, you end up having either extremely career driven or super awkward managers. Some of those middle managers are very green, making it even more painful. Some women feel like they have to be extra tough at work because of the Leanin coolaid, making them very hard to work with.")
 
     with st.expander("Top Interview Questions Frequently Asked at Meta"):
-        st.write("1. General Questions:")
+        st.write("General Questions:")
         st.write("- Tell Technical Background")
         st.write("- How Would You Measure Success of a Product")
         st.write("- Tell About a Time When...")
         st.write("- Previous Experience")
         st.write(" ")
-        st.write("2. Technical Questions:")
+        st.write("Technical Questions:")
         st.write("- SQL")
         st.write("- Questions on Case Studies, e.g. Determine Spam Friend Requests")
         st.write("- Questions on AB Testing")
