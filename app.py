@@ -103,8 +103,7 @@ else:
     st.image(image, width = 100)
 
     company_match = list(response.json()['sorted_company'])[-1]
-    original_title = f'<p style="font-family:Calibri Light; color:Blue; font-size: 20px;">{company_match}</p>'
-    st.markdown(original_title, unsafe_allow_html=True)
+    st.write(f':blue[**{company_match}**]')
     
     # Company Dashboard
     company = list(response.json()['sorted_company'])[-1]
