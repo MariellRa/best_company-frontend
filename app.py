@@ -88,7 +88,7 @@ if response.status_code != 200:
 
 ## :trophy: RESULTS :trophy: 
 '''
-st.write('Your ideal company is:')
+st.write('Your closest match:')
 st.write(list(response.json()['sorted_company'])[-1])
 
 # Company Dashboard
@@ -168,7 +168,7 @@ if company == 'Apple':
                 Y = f'In addition to this, {company_name} distinguishes itself through its attention to role scope, ensuring that employees have well-defined responsibilities and opportunities for growth. They prioritize providing clear job descriptions, outlining the expectations and parameters of each role within the organization. By offering clarity in role scope, employees can understand their contributions, excel in their positions, and receive the compensation that aligns with their responsibilities.'
         st.write(X + Y)
 
-    with st.expander("Word cloud of Apple"):
+    with st.expander("Word cloud: How former employees see Apple"):
 
         apple_cloud_data = 'place work, smart people, environment people, work life, company work, big company, work smart, lot perk, well manage, pay phone, team work, work environment, life balance, people work, company culture, work apple, salary benefit, work culture, worklife balance, get work, work lot, excite work, really enjoy, culture people, fast pace, benefit pay, environment work, interest project, talented people, perk benefit, growth opportunities, lot opportunities, experience work, learn lot, opportunities grow, nice place, work people, depend team, interest work, want work, work benefit, work big, nice work, love work, work products, products impact, impact world, health insurance'
     
@@ -272,7 +272,7 @@ if company == 'Meta':
                 Y = f'In addition to this {company_name} distinguishes itself through its attention to role scope, ensuring that employees have well-defined responsibilities and opportunities for growth. They prioritize providing clear job descriptions, outlining the expectations and parameters of each role within the organization. By offering clarity in role scope, employees can understand their contributions, excel in their positions, and receive the compensation that aligns with their responsibilities.'
         st.write(X + Y)
 
-    with st.expander("Word cloud of Meta"):
+    with st.expander("Word cloud: How former employees see Meta"):
     
         meta_cloud_data = 'smart people, interest problems, work environment, learn lot, worklife balance, pay benefit, move fast, place work, people work, career growth, take care, work life, open culture, company culture, nice people, people nice, fast pace, people benefit, really smart, talented coworkers, pay smart, challenge work, smart colleagues, nice smart, challenge problems, culture people, life balance, free food, wellness benefit, benefit nice, love work, work smart, benefit pay, every day, benefit smart, learn new'
 
@@ -375,7 +375,7 @@ if company == 'Microsoft':
                 Y = f'In addition to this {company_name} distinguishes itself through its attention to role scope, ensuring that employees have well-defined responsibilities and opportunities for growth. They prioritize providing clear job descriptions, outlining the expectations and parameters of each role within the organization. By offering clarity in role scope, employees can understand their contributions, excel in their positions, and receive the compensation that aligns with their responsibilities.'
         st.write(X + Y)
 
-    with st.expander("Word cloud of Microsoft"):
+    with st.expander("Word cloud: How former employees see Microsoft"):
 
         microsoft_cloud_data = 'work life, life balance, worklife balance, work culture, work environment, smart people, company culture, people work, place work, talented people, diversity inclusion, company work, interest work, nice work, flexible work, growth mindset, opportunity work, work project, culture work, team members, benefit work, interest problems, company lot, work atmosphere, balance work, work hours, people around, work talented, culture people, lot opportunities, balance lot, stable company, balance smart'
 
@@ -478,7 +478,7 @@ if company == 'Amazon':
                 Y = f'In addition to this {company_name} distinguishes itself through its attention to role scope, ensuring that employees have well-defined responsibilities and opportunities for growth. They prioritize providing clear job descriptions, outlining the expectations and parameters of each role within the organization. By offering clarity in role scope, employees can understand their contributions, excel in their positions, and receive the compensation that aligns with their responsibilities.is best know for having a great management...'
         st.write(X + Y)
 
-    with st.expander("Word cloud of Amazon"):
+    with st.expander("Word cloud: How former employees see Amazon"):
   
         amazon_cloud_data = 'smart people, place work, lot learn, work life, life balance, interest problems, people work, work environment, work culture, learn lot, worklife balance, work amazon, company culture, best place, career growth, new things, interest work, learn new, opportunities learn, company work, work experience, challenge problems, compensation package, flexible work, get work, leadership principles, learn curve, many opportunities, career development, work home, work hours, growth opportunities, talented people, challenge work, opportunity learn, nice work, high salary, learn work, interest project, nice people, grow fast, place learn, love work, opportunity work, work high, people around, new ideas, work potential, try new, work project, machine learn, things learn, team work'
 
@@ -581,7 +581,7 @@ if company == 'Google':
                 Y = f'In addition to this {company_name} distinguishes itself through its attention to role scope, ensuring that employees have well-defined responsibilities and opportunities for growth. They prioritize providing clear job descriptions, outlining the expectations and parameters of each role within the organization. By offering clarity in role scope, employees can understand their contributions, excel in their positions, and receive the compensation that aligns with their responsibilities.'
         st.write(X + Y)
 
-    with st.expander("Word cloud of Google"):
+    with st.expander("Word cloud: How former employees see Google"):
   
         google_cloud_data = 'smart people, work life, life balance, best company, free food, work environment, place work, worklife balance, work culture, work google, nice people, learn lot, people work, company work, every day, benefit work, nice work'
 
