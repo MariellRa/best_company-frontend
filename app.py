@@ -96,7 +96,7 @@ else:
     st.write('Your closest match:')
     st.write(list(response.json()['sorted_company'])[-1])
 
-    company_n = (list(response.json()[‘sorted_company’])[-1]).lower()image = Image.open(f’./images/{company_n}.png’)
+    company_n = (list(response.json()['sorted_company'])[-1]).lower()image = Image.open(f'./images/{company_n}.png')
     st.image(image, width = 100)
     
     # Company Dashboard
