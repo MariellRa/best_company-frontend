@@ -91,9 +91,8 @@ if sum(list(response.json()['sorted_company'].values())) == 0:
 else:
     '''
     
-    ## RESULTS
+    ## YOUR CLOSEST MATCH:
     '''
-    st.write('Your closest match:')
     st.write(list(response.json()['sorted_company'])[-1])
 
     company_n = (list(response.json()['sorted_company'])[-1]).lower()
