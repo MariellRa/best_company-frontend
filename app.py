@@ -29,7 +29,8 @@ st.sidebar.write("TechMatch")
 We assist you in finding your ideal company as a data scientist. 
 '''
 with st.expander("How does this work?"):
-    st.write("Once you've provided the necessary information, our advanced algorithm will analyze your data and generate a list of companies that align with  your preferences. You'll receive valuable insights about each company's  work-life balance, career growth opportunities, and collaborative  environment, enabling you to make an informed decision about your future workplace as a data scientist.")
+    st.write("- Once you've provided the necessary information, our advanced algorithm will analyze your data and generate a list of companies that align with  your preferences.")
+    st.write("- You'll receive valuable insights about each company's work-life balance, career growth opportunities, and collaborative  environment, enabling you to make an informed decision about your future workplace as a data scientist.")
 
 st.write("To begin the process, rate ten keywords to reflect your preferences.") 
 st.write("Please assign each a value from 0 to 10. The higher the value, the more important the keyword is to you.")
