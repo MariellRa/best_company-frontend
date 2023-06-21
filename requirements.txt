@@ -1,0 +1,14 @@
+wordcloud
+pandas
+numpy
+matplotlib
+pillow
+streamlit-ace
+streamlit-discourse
+streamlit-elements
+streamlit-pandas-profiling
+streamlit-player
+streamlit-quill
+pandas-profiling
+requests
+altair
