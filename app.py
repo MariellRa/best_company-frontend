@@ -203,8 +203,8 @@ if company == 'Apple':
 
     with st.expander("Reviews most people found helpful"):
         st.write("Review 1")
-        st.write("- **Pros**: There is a certain recognition you receive when others hear you work for Apple with it being the high flyer in the industry. There is some flexibility in the hours as long as you get your work done.")
-        st.write("- **Cons**: Ivory tower management that tends to be in the way more than helping. They often make decisions that the people who do the work don't understand and hurts productivity. After cutting down benefits quite a bit during the lean years (mid 90's), has done nothing to bring any of them back now that we are making a killing.")
+        st.write("- :green[**Pros**]: There is a certain recognition you receive when others hear you work for Apple with it being the high flyer in the industry. There is some flexibility in the hours as long as you get your work done.")
+        st.write("- :red[**Cons**]: Ivory tower management that tends to be in the way more than helping. They often make decisions that the people who do the work don't understand and hurts productivity. After cutting down benefits quite a bit during the lean years (mid 90's), has done nothing to bring any of them back now that we are making a killing.")
         st.write(" ")
         st.write("Review 2")
         st.write("- **Pros**: Salary, Food and Free shuttle bus from MRT-station.")
