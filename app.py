@@ -93,7 +93,8 @@ else:
     
     ## :dart: Your closest match :dart:
     '''
-
+    st.write(" ")
+    st.write(" ")
     image = Image.open(f'./images/{company_n}.png')
     st.image(image, width = 100)
 
