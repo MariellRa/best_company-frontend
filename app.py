@@ -322,6 +322,7 @@ if company == 'Meta':
       
         st.write("Technical Questions:")
         st.write("- SQL")
+        st.write("- Questions on Case Studies, e.g. Determine spam friend requests")
         st.write("- Questions on AB Testing")
         st.write("- Machine Learning")
 
