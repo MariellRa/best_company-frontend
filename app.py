@@ -97,7 +97,6 @@ else:
     ## :dart: Your closest match :dart:
     '''
     st.write(" ")
-    st.write(" ")
     
     company_n = (list(response.json()['sorted_company'])[-1]).lower()
     image = Image.open(f'./images/{company_n}.png')
