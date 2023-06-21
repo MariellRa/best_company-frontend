@@ -94,12 +94,12 @@ else:
     ## :dart: Your closest match :dart:
     '''
 
-    company_match = list(response.json()['sorted_company'])[-1]
-    st.write(f':blue[**{company_match}**]')
-
     company_n = (list(response.json()['sorted_company'])[-1]).lower()
     image = Image.open(f'./images/{company_n}.png')
     st.image(image, width = 100)
+
+    company_match = list(response.json()['sorted_company'])[-1]
+    st.write(f':blue[**{company_match}**]')
     
     # Company Dashboard
     company = list(response.json()['sorted_company'])[-1]
