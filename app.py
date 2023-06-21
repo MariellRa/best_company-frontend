@@ -24,7 +24,7 @@ st.sidebar.markdown("**Apps**")
 st.sidebar.write("Find DS Company")
 
 '''
-# Welcome to app :blue[Find DS Company]!
+# Welcome to app :blue[TechMatch]!
 
 Welcome to our app, where we assist you in finding your ideal company as a data scientist. 
 
