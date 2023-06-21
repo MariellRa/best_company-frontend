@@ -226,7 +226,7 @@ if company == 'Apple':
 if company == 'Meta':
     st.write('Meta Platforms, Inc., formerly named Facebook, Inc., and TheFacebook, Inc., is an American multinational technology conglomerate based in Menlo Park, California. The company owns Facebook, Instagram, and WhatsApp, among other products and services.')
 
-    with st.expander("Comprehensive Analysis of Results"):
+    with st.expander("Your compatibility analysis"):
         for i in range(1):
             if list(sorted_variable_dict)[i][0] == keyword1:
                 X = f'{company_name} is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
@@ -330,7 +330,7 @@ if company == 'Meta':
 if company == 'Microsoft':
     st.write('Microsoft Corporation is an American multinational technology corporation headquartered in Redmond, Washington. Microsofts best-known software products are the Windows line of operating systems, the Microsoft Office suite, and the Internet Explorer and Edge web browsers.')
 
-    with st.expander("Comprehensive Analysis of Results"):
+    with st.expander("Your compatibility analysis"):
         for i in range(1):
             if list(sorted_variable_dict)[i][0] == keyword1:
                 X = f'{company_name} is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
@@ -433,7 +433,7 @@ if company == 'Microsoft':
 if company == 'Amazon':
     st.write('Amazon.com, Inc. is an American multinational technology company focusing on e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence.')
 
-    with st.expander("Comprehensive Analysis of Results"):
+    with st.expander("Your compatibility analysis"):
         for i in range(1):
             if list(sorted_variable_dict)[i][0] == keyword1:
                 X = f'{company_name}  is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
@@ -536,7 +536,7 @@ if company == 'Amazon':
 if company == 'Google':
     st.write('Google LLC is an American multinational technology company focusing on artificial intelligence, online advertising, search engine technology, cloud computing, computer software, quantum computing, e-commerce, and consumer electronics.')
 
-    with st.expander("Comprehensive Analysis of Results"):
+    with st.expander("Your compatibility analysis"):
         for i in range(1):
             if list(sorted_variable_dict)[i][0] == keyword1:
                 X = f'{company_name} is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
