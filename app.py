@@ -201,13 +201,13 @@ if company == 'Apple':
         st.altair_chart(ratings_bar_chart_apple, use_container_width=True)
 
     with st.expander("Reviews most people found helpful"):
-        st.write("1.)
+        st.write("1.")
         st.write("- **Pros**: There is a certain recognition you receive when others hear you work for Apple with it being the high flyer in the industry. There is some flexibility in the hours as long as you get your work done.")
         st.write("- **Cons**: Ivory tower management that tends to be in the way more than helping. They often make decisions that the people who do the work don't understand and hurts productivity. After cutting down benefits quite a bit during the lean years (mid 90's), has done nothing to bring any of them back now that we are making a killing.")
-        st.write("2.)
+        st.write("2.")
         st.write("- **Pros**: Salary, Food and Free shuttle bus from MRT-station.")
         st.write("- **Cons**: Too much micro-management Always monitored by management. Can barely go to toilet without getting message from boss about being inactive. Too high expectations from Management to hit KPI - they care more about quantity than quality. No team morale. Management don't even introduce you to your colleagues when you start. No communication with management except for when you do something *wrong* like taking too long to get your coffee.")
-        st.write("3.)
+        st.write("3.")
         st.write("- **Pros**: At the beginning you can learn a lot and see how a big company works. Depending on teams, data scientists have a lot of freedom.") 
         st.write("- **Cons**: Unstructured. Infra structure is not as great as some other big companies. Growth is slow which is natural for big companies.")
     
