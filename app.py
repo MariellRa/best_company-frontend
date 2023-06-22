@@ -26,7 +26,7 @@ st.sidebar.write("TechMatch")
 '''
 # Welcome to :blue[TechMatch]!
 
-We assist you in finding your ideal company as a data scientist. 
+:technologist: Find your ideal company as a data scientist. 
 '''
 with st.expander("How does this work?"):
     st.write("- To begin the process, rate ten keywords to reflect your preferences.")
