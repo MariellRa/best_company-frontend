@@ -104,7 +104,11 @@ else:
     st.image(image, width = 100)
 
     company_match = list(response.json()['sorted_company'])[-1]
-    st.write(f':blue[**{company_match}**]')
+    
+    st.write(
+        f"<span style='color: #32AAD9;'><strong>{company_match}</strong></span>",
+        unsafe_allow_html=True
+    )
     
     # Company Dashboard
     company = list(response.json()['sorted_company'])[-1]
