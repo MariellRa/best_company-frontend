@@ -86,7 +86,7 @@ if response.status_code != 200:
 
 if sum(list(response.json()['sorted_company'].values())) == 0:
     st.write(" ")
-    st.write(":exclamation: No results yet!:exclamation:")
+    st.write(":exclamation: No results yet :exclamation:")
     st.write("To begin the process, please rate ten keywords to reflect your preferences.")
 
 else:
@@ -95,7 +95,7 @@ else:
     st.write(" ")
     '''
     
-    ## :dart: Your closest match :dart:
+    ## :dart: Your closest match:
     '''
     st.write(" ")
     
@@ -200,7 +200,7 @@ else:
         
             st.pyplot(fig)
     
-        with st.expander("How former employees have rated Apple?"):
+        with st.expander(":+1: How former employees have rated Apple?"):
             ratings_data_apple = pd.DataFrame({
                 "Ratings": ["5","4","3","2","1"],
                 "RatingsbyAppleEmployees": [052.8,029.1,012.2,002.0,003.9]  
@@ -218,7 +218,7 @@ else:
     
             st.altair_chart(ratings_bar_chart_apple, use_container_width=True)
     
-        with st.expander("Reviews most people found helpful"):
+        with st.expander(":speaking_head_in_silhouette: Reviews most people found helpful"):
             st.write("Review 1")
             st.write("- :green[**Pros**]: There is a certain recognition you receive when others hear you work for Apple with it being the high flyer in the industry. There is some flexibility in the hours as long as you get your work done.")
             st.write("- :red[**Cons**]: Ivory tower management that tends to be in the way more than helping. They often make decisions that the people who do the work don't understand and hurts productivity. After cutting down benefits quite a bit during the lean years (mid 90's), has done nothing to bring any of them back now that we are making a killing.")
@@ -231,20 +231,20 @@ else:
             st.write("- :green[**Pros**]: At the beginning you can learn a lot and see how a big company works. Depending on teams, data scientists have a lot of freedom.") 
             st.write("- :red[**Cons**]: Unstructured. Infra structure is not as great as some other big companies. Growth is slow which is natural for big companies.")
         
-        with st.expander("Top interview questions frequently asked at Apple"):
-            st.write("General questions:")
+        with st.expander(":grey_question: Top interview questions frequently asked at Apple"):
+            st.write(":mag: General questions:")
             st.write("- Internship experiences")
             st.write("- How to approach problems")
             st.write("- Tell current responsibilities")
             st.write("- Projects on resume")
             st.write(" ")
-            st.write("Technical questions:")
+            st.write(":computer: Technical questions:")
             st.write("- SQL basic questions")
             st.write("- Metrics used to evaluate a model")
             st.write("- Conduct AB testing")
             st.write("- KNN nearest neighbor")
     
-        with st.expander("Insights into the interview process and job offer rates"):
+        with st.expander(":chart_with_upwards_trend: Insights into the interview process and job offer rates"):
             st.write("- 34% of candidates describe the interview process as difficult for Apple")
             st.write("- 56% of candidates describe the interview process as average for Apple")
             st.write("- 24% of candidates receive job offers for Apple")
