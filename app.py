@@ -713,4 +713,4 @@ st.write(" ")
 st.write(" ")        
 st.write(" ")
 with st.expander("Disclaimer: Data Analysis and Recommendations Based on Current Internet Data"):
-    st.write("Please note that it is important to consult with legal professionals to ensure that the disclaimer meets any specific legal requirements and is tailored to your company’s circumstances.")
+    st.write("Tbc")
