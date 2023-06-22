@@ -23,17 +23,17 @@ keyword10 = 'Role scope'
 st.sidebar.markdown("**Apps**")
 st.sidebar.write("TechMatch")
 
-'''
-# Welcome to :blue[TechMatch]!
+st.write("<h1>Welcome to <span style='color: #32AAD9;'>TechMatch</span>!</h1>", unsafe_allow_html=True)
 
-We assist you in finding your ideal company as a data scientist. 
+'''
+:technologist: Find your ideal company as a data scientist.
 '''
 with st.expander("How does this work?"):
     st.write("- To begin the process, rate ten keywords to reflect your preferences.")
     st.write("- Once you've provided the necessary information, our advanced algorithm will analyze your data and generate a list of companies that align with  your preferences.")
     st.write("- You'll receive valuable insights about each company's work-life balance, career growth opportunities, and collaborative  environment, enabling you to make an informed decision about your future workplace as a data scientist.")
 
-st.write("Please assign each keyword a value from 0 to 10. The higher the value, the more important the keyword is to you.")
+st.write(":arrow_down: Please assign each keyword a value from 0 to 10. The higher the value, the more important the keyword is to you.")
 
 col1, col2 = st.columns(2)
 
@@ -86,19 +86,25 @@ if response.status_code != 200:
 
 if sum(list(response.json()['sorted_company'].values())) == 0:
     st.write(" ")
-    st.write(':exclamation: No results yet! To begin the process, please rate ten keywords to reflect your preferences.')
+    st.write(":exclamation: No results yet :exclamation:")
+    st.write("To begin the process, please rate ten keywords to reflect your preferences.")
 
 else:
+    
+    st.write(" ")
+    st.write(" ")
     '''
     
-    ## :trophy: RESULTS :trophy: 
+    ## :dart: Your closest match:
     '''
-    st.write('Your closest match:')
-    st.write(list(response.json()['sorted_company'])[-1])
-
+    st.write(" ")
+    
     company_n = (list(response.json()['sorted_company'])[-1]).lower()
     image = Image.open(f'./images/{company_n}.png')
     st.image(image, width = 100)
+
+    company_match = list(response.json()['sorted_company'])[-1]
+    st.write(f':blue[**{company_match}**]')
     
     # Company Dashboard
     company = list(response.json()['sorted_company'])[-1]
@@ -132,7 +138,7 @@ else:
     if company == 'Apple':
         st.write('Apple Inc. is an American multinational technology company headquartered in Cupertino, California. Apple is the world largest technology company by revenue, and the second-largest mobile phone manufacturer in the world.')
     
-        with st.expander("Your compatibility analysis"):
+        with st.expander(":linked_paperclips: Your compatibility analysis"):
             for i in range(1):
                 if list(sorted_variable_dict)[i][0] == keyword1:
                     X = f'{company_name} is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
@@ -180,7 +186,7 @@ else:
             st.write(" ")
             st.write("-", Y)
     
-        with st.expander("Word cloud: How former employees see Apple"):
+        with st.expander(":thought_balloon: Word cloud: What employees say about Apple?"):
     
             apple_cloud_data = 'place work, smart people, environment people, work life, company work, big company, work smart, lot perk, well manage, pay phone, team work, work environment, life balance, people work, company culture, work apple, salary benefit, work culture, worklife balance, get work, work lot, excite work, really enjoy, culture people, fast pace, benefit pay, environment work, interest project, talented people, perk benefit, growth opportunities, lot opportunities, experience work, learn lot, opportunities grow, nice place, work people, depend team, interest work, want work, work benefit, work big, nice work, love work, work products, products impact, impact world, health insurance'
         
@@ -194,7 +200,7 @@ else:
         
             st.pyplot(fig)
     
-        with st.expander("How former Employees have rated Apple?"):
+        with st.expander(":+1: How former employees have rated Apple?"):
             ratings_data_apple = pd.DataFrame({
                 "Ratings": ["5","4","3","2","1"],
                 "RatingsbyAppleEmployees": [052.8,029.1,012.2,002.0,003.9]  
@@ -212,7 +218,7 @@ else:
     
             st.altair_chart(ratings_bar_chart_apple, use_container_width=True)
     
-        with st.expander("Reviews most people found helpful"):
+        with st.expander(":speaking_head_in_silhouette: Reviews most people found helpful"):
             st.write("Review 1")
             st.write("- :green[**Pros**]: There is a certain recognition you receive when others hear you work for Apple with it being the high flyer in the industry. There is some flexibility in the hours as long as you get your work done.")
             st.write("- :red[**Cons**]: Ivory tower management that tends to be in the way more than helping. They often make decisions that the people who do the work don't understand and hurts productivity. After cutting down benefits quite a bit during the lean years (mid 90's), has done nothing to bring any of them back now that we are making a killing.")
@@ -225,20 +231,20 @@ else:
             st.write("- :green[**Pros**]: At the beginning you can learn a lot and see how a big company works. Depending on teams, data scientists have a lot of freedom.") 
             st.write("- :red[**Cons**]: Unstructured. Infra structure is not as great as some other big companies. Growth is slow which is natural for big companies.")
         
-        with st.expander("Top Interview Questions Frequently Asked at Apple"):
-            st.write("General Questions:")
-            st.write("- Internship Experiences")
-            st.write("- How to Approach Problems")
-            st.write("- Tell Current Responsibilities")
-            st.write("- Projects on Resume")
+        with st.expander(":grey_question: Top interview questions frequently asked at Apple"):
+            st.write(":mag: General questions:")
+            st.write("- Internship experiences")
+            st.write("- How to approach problems")
+            st.write("- Tell current responsibilities")
+            st.write("- Projects on resume")
             st.write(" ")
-            st.write("Technical Questions:")
-            st.write("- SQL Basic Questions")
-            st.write("- Metrics Used to Evaluate a Model")
-            st.write("- Conduct AB Testing")
-            st.write("- KNN Nearest Neighbor")
+            st.write(":computer: Technical questions:")
+            st.write("- SQL basic questions")
+            st.write("- Metrics used to evaluate a model")
+            st.write("- Conduct AB testing")
+            st.write("- KNN nearest neighbor")
     
-        with st.expander("Insights into the Interview Process and Job Offer Rates"):
+        with st.expander(":chart_with_upwards_trend: Insights into the interview process and job offer rates"):
             st.write("- 34% of candidates describe the interview process as difficult for Apple")
             st.write("- 56% of candidates describe the interview process as average for Apple")
             st.write("- 24% of candidates receive job offers for Apple")
@@ -246,7 +252,7 @@ else:
     if company == 'Meta':
         st.write('Meta Platforms, Inc., formerly named Facebook, Inc., and TheFacebook, Inc., is an American multinational technology conglomerate based in Menlo Park, California. The company owns Facebook, Instagram, and WhatsApp, among other products and services.')
     
-        with st.expander("Your compatibility analysis"):
+        with st.expander(":linked_paperclips: Your compatibility analysis"):
             for i in range(1):
                 if list(sorted_variable_dict)[i][0] == keyword1:
                     X = f'{company_name} is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
@@ -294,7 +300,7 @@ else:
             st.write(" ")
             st.write("-", Y)
     
-        with st.expander("Word cloud: How former employees see Meta"):
+        with st.expander(":thought_balloon: Word cloud: What employees say about Meta?"):
         
             meta_cloud_data = 'smart people, interest problems, work environment, learn lot, worklife balance, pay benefit, move fast, place work, people work, career growth, take care, work life, open culture, company culture, nice people, people nice, fast pace, people benefit, really smart, talented coworkers, pay smart, challenge work, smart colleagues, nice smart, challenge problems, culture people, life balance, free food, wellness benefit, benefit nice, love work, work smart, benefit pay, every day, benefit smart, learn new'
     
@@ -308,7 +314,7 @@ else:
         
             st.pyplot(fig)
     
-        with st.expander("How former Employees have rated Meta?"):
+        with st.expander(":+1: How former employees have rated Meta?"):
       
             ratings_data_meta = pd.DataFrame({
                 "Ratings": ["5","4","3","2","1"],
@@ -326,7 +332,7 @@ else:
     
             st.altair_chart(ratings_bar_chart_meta, use_container_width=True)
     
-        with st.expander("Reviews most people found helpful"):
+        with st.expander(":speaking_head_in_silhouette: Reviews most people found helpful"):
             st.write("Review 1")
             st.write("- :green[**Pros**]: Good perks and comp, coworkers are nice and fun.") 
             st.write("- :red[**Cons**]: Very competitive environment. No possible to succeed if you don’t work 60+ hours. Focus on short term impact due to performance cycle every 6 months. No clarity on expectations of roles. Mix signals from leadership about culture.")
@@ -339,20 +345,20 @@ else:
             st.write("- :green[**Pros**]: Food - Health care benefits - Fringe benefits - Nice campus - Corporate shuttles - State of the art tech stack - Extremely smart coworkers - Visionary and bold top management.") 
             st.write("- :red[**Cons**]: Work/life balance can get hurt as a lot of folks at the office are single and do not understand the needs of having a family. The company is getting bigger. This means more room for backroom politics and aligning people without ruffling people's feathers. Very talented individual contributors (and/or good at politics) are being promoted. As a result, instead of having well rounded managers, you end up having either extremely career driven or super awkward managers. Some of those middle managers are very green, making it even more painful. Some women feel like they have to be extra tough at work because of the Leanin coolaid, making them very hard to work with.")
     
-        with st.expander("Top Interview Questions Frequently Asked at Meta"):
-            st.write("General Questions:")
-            st.write("- Tell Technical Background")
-            st.write("- How Would You Measure Success of a Product")
-            st.write("- Tell About a Time When...")
-            st.write("- Previous Experience")
+        with st.expander(":grey_question: Top interview questions frequently asked at Meta"):
+            st.write(":mag: General questions:")
+            st.write("- Tell technical background")
+            st.write("- How would you measure success of a product")
+            st.write("- Tell about a time when...")
+            st.write("- Previous experience")
             st.write(" ")
-            st.write("Technical Questions:")
+            st.write(":computer: Technical questions:")
             st.write("- SQL")
-            st.write("- Questions on Case Studies, e.g. Determine Spam Friend Requests")
-            st.write("- Questions on AB Testing")
-            st.write("- Machine Learning")
+            st.write("- Questions on case studies, e.g. Determine spam friend requests")
+            st.write("- Questions on AB testing")
+            st.write("- Machine learning")
     
-        with st.expander("Insights into the Interview Process and Job Offer Rates"):
+        with st.expander(":chart_with_upwards_trend: Insights into the interview process and job offer rates"):
             st.write("- 26% of candidates describe the interview process as difficult for Meta")
             st.write("- 70% of candidates describe the interview process as average for Meta")
             st.write("- 21% of candidates receive job offers for Meta")
@@ -360,7 +366,7 @@ else:
     if company == 'Microsoft':
         st.write('Microsoft Corporation is an American multinational technology corporation headquartered in Redmond, Washington. Microsofts best-known software products are the Windows line of operating systems, the Microsoft Office suite, and the Internet Explorer and Edge web browsers.')
     
-        with st.expander("Your compatibility analysis"):
+        with st.expander(":linked_paperclips: Your compatibility analysis"):
             for i in range(1):
                 if list(sorted_variable_dict)[i][0] == keyword1:
                     X = f'{company_name} is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
@@ -407,7 +413,7 @@ else:
             st.write(" ")
             st.write("-", Y)
     
-        with st.expander("Word cloud: How former employees see Microsoft"):
+        with st.expander(":thought_balloon: Word cloud: What employees say about Microsoft?"):
     
             microsoft_cloud_data = 'work life, life balance, worklife balance, work culture, work environment, smart people, company culture, people work, place work, talented people, diversity inclusion, company work, interest work, nice work, flexible work, growth mindset, opportunity work, work project, culture work, team members, benefit work, interest problems, company lot, work atmosphere, balance work, work hours, people around, work talented, culture people, lot opportunities, balance lot, stable company, balance smart'
     
@@ -421,7 +427,7 @@ else:
         
             st.pyplot(fig)
     
-        with st.expander("How former Employees have rated Microsoft?"):
+        with st.expander(":+1: How former employees have rated Microsoft?"):
       
             ratings_data_microsoft = pd.DataFrame({
                 "Ratings": ["5","4","3","2","1"],
@@ -439,7 +445,7 @@ else:
     
             st.altair_chart(ratings_bar_chart_microsoft, use_container_width=True)
     
-        with st.expander("Reviews most people found helpful"):
+        with st.expander(":speaking_head_in_silhouette: Reviews most people found helpful"):
             st.write("Review 1")
             st.write("- :green[**Pros**]: Brand; serves as a launchpad + Scope of work is broad + Lots of learnings- both technical and management skills.") 
             st.write("- :red[**Cons**]: There are islands of talents, some are good but mostly average Must 'kiss-ass' to get visibility, promotion, and bonus Very slow pace of work and career growth.")
@@ -452,20 +458,20 @@ else:
             st.write("- :green[**Pros**]: Working with truly big datasets and ability to use advanced techniques Cutting edge database/stats tools Relaxed environment with no deadlines and pressure.") 
             st.write("- :red[**Cons**]: slow-paced, no clear objectives and not goal-oriented - may feel more like a uni environment than a real work multiple teams doing the same tasks - which leads to internal competition and politics rather than focusing on external clients too many layers of management most project don't lead to any noticeable impact and don't align with company strategy - the emphasis is on *PR* aspect to make the manager/team look good (you spend far more time on presenting/ improving the power point slides than actual analysis or work).")
         
-        with st.expander("Top Interview Questions Frequently Asked at Microsoft"):
-            st.write("General Questions:")
-            st.write("- Discuss Experience in Data Science")
-            st.write("- Tell About a Time When...")
-            st.write("- Difficulties Faced")
-            st.write("- Prior Experience")
+        with st.expander(":grey_question: Top interview questions frequently asked at Microsoft"):
+            st.write(":mag: General questions:")
+            st.write("- Discuss experience in data science")
+            st.write("- Tell about a time when...")
+            st.write("- Difficulties faced")
+            st.write("- Prior experience")
             st.write(" ")
-            st.write("Technical Questions:")
-            st.write("- Underfitting and Overfitting")
-            st.write("- Recommendation System Design")
-            st.write("- Probability Statistics")
-            st.write("- Machine Learning")
+            st.write(":computer: Technical questions:")
+            st.write("- Underfitting and overfitting")
+            st.write("- Recommendation system design")
+            st.write("- Probability statistics")
+            st.write("- Machine learning")
     
-        with st.expander("Insights into the Interview Process and Job Offer Rates"):
+        with st.expander(":chart_with_upwards_trend: Insights into the interview process and job offer rates"):
             st.write("- 26% of candidates describe the interview process as difficult for Microsoft")
             st.write("- 57% of candidates describe the interview process as average for Microsoft")
             st.write("- 35% of candidates receive job offers for Microsoft")
@@ -473,7 +479,7 @@ else:
     if company == 'Amazon':
         st.write('Amazon.com, Inc. is an American multinational technology company focusing on e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence.')
     
-        with st.expander("Your compatibility analysis"):
+        with st.expander(":linked_paperclips: Your compatibility analysis"):
             for i in range(1):
                 if list(sorted_variable_dict)[i][0] == keyword1:
                     X = f'{company_name}  is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
@@ -520,7 +526,7 @@ else:
             st.write(" ")
             st.write("-", Y)
     
-        with st.expander("Word cloud: How former employees see Amazon"):
+        with st.expander(":thought_balloon: Word cloud: What employees say about Amazon?"):
       
             amazon_cloud_data = 'smart people, place work, lot learn, work life, life balance, interest problems, people work, work environment, work culture, learn lot, worklife balance, work amazon, company culture, best place, career growth, new things, interest work, learn new, opportunities learn, company work, work experience, challenge problems, compensation package, flexible work, get work, leadership principles, learn curve, many opportunities, career development, work home, work hours, growth opportunities, talented people, challenge work, opportunity learn, nice work, high salary, learn work, interest project, nice people, grow fast, place learn, love work, opportunity work, work high, people around, new ideas, work potential, try new, work project, machine learn, things learn, team work'
     
@@ -534,7 +540,7 @@ else:
         
             st.pyplot(fig)
     
-        with st.expander("How former Employees have rated Amazon?"):
+        with st.expander(":+1: How former employees have rated Amazon?"):
       
             ratings_data_amazon = pd.DataFrame({
                 "Ratings": ["5","4","3","2","1"],
@@ -552,7 +558,7 @@ else:
     
             st.altair_chart(ratings_bar_chart_amazon, use_container_width=True)
     
-        with st.expander("Reviews most people found helpful"):
+        with st.expander(":speaking_head_in_silhouette: Reviews most people found helpful"):
             st.write("Review 1")
             st.write("- :green[**Pros**]: I hear this is certainly not true for every team, but I think my team is great and I’m very happy at Amazon. - My work life balance is great. I hardly ever have to work more than 40 hours/week. The few times that I do, I don’t particularly mind since I rarely have to. - My team and manager are really chill. Nobody cares when I get to the office, when I leave, or exactly how many hours I was there. I’m certainly expected to get my work done, but I feel like I have a lot of freedom to work on my projects however I’d like. I also work from home about once a week. - This is especially true for Amazon Web Services (where I work) but I feel fortunate that I can learn how to use all the services on AWS for free. My field uses AWS pretty extensively, but it’s normally pretty expensive if you want to use it a lot. We get it all for free and we use it a lot in our everyday work, so I feel pretty lucky to be able to learn it.")
             st.write("- :red[**Cons**]: Compared to other tech companies Amazon is undoubtedly very cheap. We have to pay for all of our own food, the food is expensive, and it’s also mediocre. Parking isn’t even free. Our benefits are okay but not as good as other tech companies. Our office space looks fine but pretty minimalist. I find this to be minor in the grand scheme of things but it’s definitely noticeable. I dislike being on-call. I’m on call for a week at a time about once every two months. During that time you’re handed a pager and you have to be available 24/7 for issues. This could potentially be on a random weekend afternoon, 8 am in the morning, or worst of all, the dreaded 3 am pager ringing. Fortunately I’m not on-call all that often so I just suck it up and deal with it whenever it rolls around.")
@@ -565,20 +571,20 @@ else:
             st.write("- :green[**Pros**]: Flexible working hours work from home there are many smart people around you who are more than willing to share their knowledge.") 
             st.write("- :red[**Cons**]: work-life balance not so good highly political flying economy on inter-continental flights no matter your level very rigid HR compensation could be better no perks such as a car on leasing no food provided on campus no tech courses (such as Machine Learning University) in Europe.")
     
-        with st.expander("Top Interview Questions Frequently Asked at Amazon"):
-            st.write("General Questions:")
-            st.write("- Tell About a Time When...")
-            st.write("- Explain One Project on Resume")
-            st.write("- Behavioral Questions")
-            st.write("- Tell About a Time When You Failed")
+        with st.expander(":grey_question: Top interview questions frequently asked at Amazon"):
+            st.write(":mag: General questions:")
+            st.write("- Tell about a time when...")
+            st.write("- Explain one project on resume")
+            st.write("- Behavioral questions")
+            st.write("- Tell about a time when you failed")
             st.write(" ")
-            st.write("Technical Questions:")
-            st.write("- Difference Between Bagging and Boosting")
+            st.write(":computer: Technical questions:")
+            st.write("- Difference between bagging and boosting")
             st.write("- SQL")
-            st.write("- Machine Learning Questions")
-            st.write("- Visualize Multidimensional Data")
+            st.write("- Machine learning questions")
+            st.write("- Visualize multidimensional data")
     
-        with st.expander("Insights into the Interview Process and Job Offer Rates"):
+        with st.expander(":chart_with_upwards_trend: Insights into the interview process and job offer rates"):
             st.write("- 18% of candidates describe the interview process as difficult for Amazon")
             st.write("- 71% of candidates describe the interview process as average for Amazon")
             st.write("- 22% of candidates receive job offers for Amazon")
@@ -586,7 +592,7 @@ else:
     if company == 'Google':
         st.write('Google LLC is an American multinational technology company focusing on artificial intelligence, online advertising, search engine technology, cloud computing, computer software, quantum computing, e-commerce, and consumer electronics.')
     
-        with st.expander("Your compatibility analysis"):
+        with st.expander(":linked_paperclips: Your compatibility analysis"):
             for i in range(1):
                 if list(sorted_variable_dict)[i][0] == keyword1:
                     X = f'{company_name} is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
@@ -633,7 +639,7 @@ else:
             st.write(" ")
             st.write("-", Y)
     
-        with st.expander("Word cloud: How former employees see Google"):
+        with st.expander(":thought_balloon: Word cloud: What employees say about Google?"):
       
             google_cloud_data = 'smart people, work life, life balance, best company, free food, work environment, place work, worklife balance, work culture, work google, nice people, learn lot, people work, company work, every day, benefit work, nice work'
     
@@ -647,7 +653,7 @@ else:
         
             st.pyplot(fig)
     
-        with st.expander("How former Employees have rated Google?"):
+        with st.expander(":+1: How former employees have rated Google?"):
       
             ratings_data_google = pd.DataFrame({
                 "Ratings": ["5","4","3","2","1"],
@@ -665,7 +671,7 @@ else:
     
             st.altair_chart(ratings_bar_chart_google, use_container_width=True)
     
-        with st.expander("Reviews most people found helpful"):
+        with st.expander(":speaking_head_in_silhouette: Reviews most people found helpful"):
             st.write("Review 1")
             st.write("- :green[**Pros**]: Great tech infrastructure systems, but it's hard to know which ones to use. This is usually served by having senior team members who know what they're doing, but teams in Finance generally don't have that (employee churn).")
             st.write("- :red[**Cons**]: Innovation is nonexistent: too many in the company are from non-tech / corporate backgrounds. This is especially true for those in management positions. As a result, decisions made are often too conservative. There are lots of talking points about how the org is innovating what a finance department can do but most of the people who do the innovating leave as soon as they can. Not a gateway to Google: I joined thinking that the I could work in Finance for a while learning new skills and working on cool projects on my way to moving into the eng org. This is generally not the case. What I didn't realize when I joined is that I was on a Finance ladder. As a result, transferring to the eng org involves a full interview process. These interviews are (from many people I've talked to) more stringent than the external ones. Ask which ladder you'll be placed on before accepting the offer! (This is also why the offer was FAR lower than what I expected).")
@@ -678,21 +684,33 @@ else:
             st.write("- :green[**Pros**]: Great job security Clear path to promotion Smart colleagues Excellent career development resources Diverse workplace Creative freedom and autonomy Effective feedback processes.") 
             st.write("- :red[**Cons**]: Can be quite political Multiple teams working on the same project Some loud and disrespectful employees Sexual and racial harassment/discrimination happens more often than it should given their external messaging/image they project Not true to their stated ethics.")
     
-        with st.expander("Top Interview Questions Frequently Asked at Google"):
-            st.write("General Questions:")
-            st.write("- Prior Projects Worked")
+        with st.expander(":grey_question: Top interview questions frequently asked at Google"):
+            st.write(":mag: General questions:")
+            st.write("- Prior projects worked")
             st.write("- Responsibilities")
-            st.write("- Questions on Setting Priorities and Multitasking")
-            st.write("- Describe Previous Experience")
+            st.write("- Questions on setting priorities and multitasking")
+            st.write("- Describe previous experience")
             st.write(" ")
-            st.write("Technical Questions:")
-            st.write("- Machine Learning and Statstics Questions")
-            st.write("- Standard Mean Error")
-            st.write("- SQL and Window Functions")
-            st.write("- Describe How Principal Component Analysis Works")
+            st.write(":computer: Technical questions:")
+            st.write("- Machine learning and statstics questions")
+            st.write("- Standard mean error")
+            st.write("- SQL and window functions")
+            st.write("- Describe how principal component analysis works")
     
-        with st.expander("Insights into the Interview Process and Job Offer Rates"):
+        with st.expander(":chart_with_upwards_trend: Insights into the interview process and job offer rates"):
             st.write("- 34% of candidates describe the interview process as difficult for Google")
             st.write("- 60% of candidates describe the interview process as average for Google")
             st.write("- 14% of candidates receive job offers for Google")
-    
+
+st.write(" ")
+st.write(" ")
+st.write(" ")
+st.write(" ")
+st.write(" ")
+st.write(" ")
+st.write(" ")
+st.write(" ")
+st.write(" ")        
+st.write(" ")
+original_title = '<p style="font-family:Courier; color:Lightgrey; font-size: 10px;">Disclaimer. TechMatch recommends companies comparing user preferences with Glassdoor reviews. The content of these reviews does not reflect the views of the TechMatch team, but rather the opinion of Glassdoor users who submitted this information anonymously on their platform. TechMatch cannot attest to the accuracy of these reviews and recommends that users keep this in mind when using the app. </p>'
+st.markdown(original_title, unsafe_allow_html=True)
