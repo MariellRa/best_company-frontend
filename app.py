@@ -300,7 +300,7 @@ else:
             st.write(" ")
             st.write("-", Y)
     
-        with st.expander("Word cloud: What employees say about Meta?"):
+        with st.expander(":thought_balloon: Word cloud: What employees say about Meta?"):
         
             meta_cloud_data = 'smart people, interest problems, work environment, learn lot, worklife balance, pay benefit, move fast, place work, people work, career growth, take care, work life, open culture, company culture, nice people, people nice, fast pace, people benefit, really smart, talented coworkers, pay smart, challenge work, smart colleagues, nice smart, challenge problems, culture people, life balance, free food, wellness benefit, benefit nice, love work, work smart, benefit pay, every day, benefit smart, learn new'
     
@@ -413,7 +413,7 @@ else:
             st.write(" ")
             st.write("-", Y)
     
-        with st.expander("Word cloud: What employees say about Microsoft?"):
+        with st.expander(":thought_balloon: Word cloud: What employees say about Microsoft?"):
     
             microsoft_cloud_data = 'work life, life balance, worklife balance, work culture, work environment, smart people, company culture, people work, place work, talented people, diversity inclusion, company work, interest work, nice work, flexible work, growth mindset, opportunity work, work project, culture work, team members, benefit work, interest problems, company lot, work atmosphere, balance work, work hours, people around, work talented, culture people, lot opportunities, balance lot, stable company, balance smart'
     
@@ -526,7 +526,7 @@ else:
             st.write(" ")
             st.write("-", Y)
     
-        with st.expander("Word cloud: What employees say about Amazon?"):
+        with st.expander(":thought_balloon: Word cloud: What employees say about Amazon?"):
       
             amazon_cloud_data = 'smart people, place work, lot learn, work life, life balance, interest problems, people work, work environment, work culture, learn lot, worklife balance, work amazon, company culture, best place, career growth, new things, interest work, learn new, opportunities learn, company work, work experience, challenge problems, compensation package, flexible work, get work, leadership principles, learn curve, many opportunities, career development, work home, work hours, growth opportunities, talented people, challenge work, opportunity learn, nice work, high salary, learn work, interest project, nice people, grow fast, place learn, love work, opportunity work, work high, people around, new ideas, work potential, try new, work project, machine learn, things learn, team work'
     
@@ -639,7 +639,7 @@ else:
             st.write(" ")
             st.write("-", Y)
     
-        with st.expander("Word cloud: What employees say about Google?"):
+        with st.expander(":thought_balloon: Word cloud: What employees say about Google?"):
       
             google_cloud_data = 'smart people, work life, life balance, best company, free food, work environment, place work, worklife balance, work culture, work google, nice people, learn lot, people work, company work, every day, benefit work, nice work'
     
