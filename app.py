@@ -86,9 +86,8 @@ if response.status_code != 200:
 
 if sum(list(response.json()['sorted_company'].values())) == 0:
     st.write(" ")
-    st.write("":exclamation: No results yet! :exclamation:
-    
-        To begin the process, please rate ten keywords to reflect your preferences."")
+    st.write(":exclamation: No results yet! :exclamation:")
+    st.write("To begin the process, please rate ten keywords to reflect your preferences.")
 
 else:
     
