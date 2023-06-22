@@ -186,7 +186,7 @@ else:
             st.write(" ")
             st.write("-", Y)
     
-        with st.expander("Word cloud: What employees say about Apple?"):
+        with st.expander(":thought_balloon: Word cloud: What employees say about Apple?"):
     
             apple_cloud_data = 'place work, smart people, environment people, work life, company work, big company, work smart, lot perk, well manage, pay phone, team work, work environment, life balance, people work, company culture, work apple, salary benefit, work culture, worklife balance, get work, work lot, excite work, really enjoy, culture people, fast pace, benefit pay, environment work, interest project, talented people, perk benefit, growth opportunities, lot opportunities, experience work, learn lot, opportunities grow, nice place, work people, depend team, interest work, want work, work benefit, work big, nice work, love work, work products, products impact, impact world, health insurance'
         
