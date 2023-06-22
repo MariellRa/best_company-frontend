@@ -33,7 +33,7 @@ with st.expander("How does this work?"):
     st.write("- Once you've provided the necessary information, our advanced algorithm will analyze your data and generate a list of companies that align with  your preferences.")
     st.write("- You'll receive valuable insights about each company's work-life balance, career growth opportunities, and collaborative  environment, enabling you to make an informed decision about your future workplace as a data scientist.")
 
-st.write("Please assign each keyword a value from 0 to 10. The higher the value, the more important the keyword is to you.")
+st.write(":arrow_down: Please assign each keyword a value from 0 to 10. The higher the value, the more important the keyword is to you.")
 
 col1, col2 = st.columns(2)
 
