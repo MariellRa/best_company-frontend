@@ -23,8 +23,7 @@ keyword10 = 'Role scope'
 st.sidebar.markdown("**Apps**")
 st.sidebar.write("TechMatch")
 
-st.write("<h1>Welcome to <span style='color: #32AAD9
-;'>TechMatch</span>!</h1>", unsafe_allow_html=True)
+st.write("<h1>Welcome to <span style='color: #32AAD9;'>TechMatch</span>!</h1>", unsafe_allow_html=True)
 
 '''
 :technologist: Find your ideal company as a data scientist.
