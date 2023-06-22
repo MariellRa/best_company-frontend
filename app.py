@@ -24,9 +24,11 @@ st.sidebar.markdown("**Apps**")
 st.sidebar.write("TechMatch")
 
 '''
-# Welcome to :blue[TechMatch]!
+st.write("<h1>Welcome to <span style='color: #32AAD9
+;'>TechMatch</span>!</h1>", unsafe_allow_html=True)
 
-:technologist: Find your ideal company as a data scientist. 
+'''
+:technologist: Find your ideal company as a data scientist.
 '''
 with st.expander("How does this work?"):
     st.write("- To begin the process, rate ten keywords to reflect your preferences.")
