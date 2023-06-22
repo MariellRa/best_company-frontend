@@ -712,5 +712,5 @@ st.write(" ")
 st.write(" ")
 st.write(" ")        
 st.write(" ")
-with st.expander("Disclaimer: Data Analysis and Recommendations Based on Current Internet Data"):
-    st.write("Tbc")
+original_title = '<p style="font-family:Courier; color:Lightgrey; font-size: 10px;">Disclaimer. TechMatch recommends companies comparing user preferences with Glassdoor reviews. The content of these reviews does not reflect the views of the TechMatch team, but rather the opinion of Glassdoor users who submitted this information anonymously on their platform. TechMatch cannot attest to the accuracy of these reviews and recommends that users keep this in mind when using the app. </p>'
+st.markdown(original_title, unsafe_allow_html=True)
