@@ -471,7 +471,7 @@ else:
             st.write("- Probability statistics")
             st.write("- Machine learning")
     
-        with st.expander(:chart_with_upwards_trend: "Insights into the interview process and job offer rates"):
+        with st.expander(":chart_with_upwards_trend: "Insights into the interview process and job offer rates"):
             st.write("- 26% of candidates describe the interview process as difficult for Microsoft")
             st.write("- 57% of candidates describe the interview process as average for Microsoft")
             st.write("- 35% of candidates receive job offers for Microsoft")
