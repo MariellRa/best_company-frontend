@@ -138,7 +138,7 @@ else:
     if company == 'Apple':
         st.write('Apple Inc. is an American multinational technology company headquartered in Cupertino, California. Apple is the world largest technology company by revenue, and the second-largest mobile phone manufacturer in the world.')
     
-        with st.expander("Your compatibility analysis"):
+        with st.expander(":linked_paperclips: Your compatibility analysis"):
             for i in range(1):
                 if list(sorted_variable_dict)[i][0] == keyword1:
                     X = f'{company_name} is exceptional when it comes to career growth, as they provide a wide variety of training programs, mentoring opportunities, and resources to help employees develop their professional skills and expand their knowledge. The company is deeply committed to recognizing and promoting talent, ensuring that individuals have clear paths for advancement and can successfully achieve their career goals.'
